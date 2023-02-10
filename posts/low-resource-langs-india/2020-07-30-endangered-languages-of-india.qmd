@@ -1,0 +1,171 @@
+---
+title: "Understanding the spread of Extinct and Endangered languages across India"
+author: "Akhilesh"
+date: "2020-07-30"
+categories: [nlp]
+format:
+  html:
+    code-fold: true
+execute:
+  enabled: true
+jupyter: python3
+image: "image.png"
+---
+
+Visualizing the spread of low resource languages across India.
+
+## Data Description
+
+The dataset of extinct and endangered languages around the world is created by The Guardian and is available [here](https://www.kaggle.com/the-guardian/extinct-languages). 
+
+Variables: The name of language, longitude, latitude, degree of endangerment and the number of speakers.
+
+
+### Data Visualisation
+
+Languages by latitude/longitude and Population are plotted. 
+
+The interactive visualisation of [Languages by Latitude/longitude](#Languages-by-Latitude/Longitude) inform us, where all the extinct and endangered languages are located across India. 
+
+Similarly, [Languages by number of speakers](#Languages-by-Population) is plotted. 
+
+```{python}
+#collapse-hide
+import numpy as np
+import pandas as pd
+pd.options.mode.chained_assignment = None
+
+from IPython.display import HTML
+from chart_studio import plotly
+import plotly.graph_objs as go
+from plotly import tools
+from plotly.offline import iplot, init_notebook_mode
+init_notebook_mode()
+
+language_data = pd.read_csv('data.csv', usecols=[0, 1, 5, 7, 10, 12, 13])
+language_data = language_data.rename(
+    columns={'Name in English':'language', 'Country codes alpha 3':'locations',
+             'Degree of endangerment':'risk', 'Number of speakers':'population'})
+language_data.columns = language_data.columns.str.lower()
+language_data['risk'] = language_data['risk'].str.title()
+language_data['population'] = language_data['population'].fillna(-1)
+
+# endangered or extinct languages in India
+language_ind = language_data[language_data['locations'].str.contains('IND') == True]
+
+language_ind['risk'] = language_ind['risk'].replace(
+    ['Vulnerable', 'Definitely Endangered', 'Severely Endangered',
+     'Critically Endangered', 'Extinct'], [1, 2, 3, 4, 5])
+
+language_ind = language_ind[['language', 'risk', 'population', 'latitude', 'longitude']]
+```
+
+### Languages by Latitude/Longitude
+
+```{python}
+#collapse-hide
+labels = ['Isolated', 'Threatened', 'Endangered', 'Abandoned', 'Extinct']
+colors = ['rgb(0, 157, 220)', 'rgb(128, 206, 237)', 'rgb(255, 182, 128)',
+          'rgb(255, 115, 13)', 'rgb(242, 23, 13)']
+
+traces = []
+for i in range(1, 6):
+    traces.append(dict(
+        type = 'scattergeo',
+        lon = language_ind[language_ind.risk == i]['longitude'],
+        lat = language_ind[language_ind.risk == i]['latitude'],
+        text = language_ind[language_ind.risk == i]['language'],
+        mode = 'markers',
+        name = labels[i-1],
+        marker = dict( 
+            size = 12,
+            opacity = 0.85,
+            color = colors[i-1],
+            line = dict(color = 'rgb(255, 255, 255)', width = 1)
+        )
+    ))
+# print(traces)
+layout = dict(
+         title = 'Languages by Latitude/Longitude in India (2016)<br>'
+                 '<sub>Click Legend to Display or Hide Categories</sub>',
+         showlegend = True,
+         legend = dict(
+             x = 0.85, y = 0.4
+         ),
+        geo = dict(
+                 scope = 'asia',
+                 showland = True,
+                 landcolor = 'rgb(250, 250, 250)',
+                 subunitwidth = 1,
+                 subunitcolor = 'rgb(217, 217, 217)',
+                 countrywidth = 1,
+                 countrycolor = 'rgb(217, 217, 217)',
+                 showlakes = True,
+                 lakecolor = 'rgb(255, 255, 255)')
+        )
+
+
+figure = dict(data = traces, layout = layout)
+```
+
+```{python}
+#collapse-hide
+import plotly.io as pio
+
+pio.show(figure)
+```
+
+### Languages by Population
+
+```{python}
+#collapse-hide
+language_ind = language_ind.sort_values('population', ascending = False)
+language_ind['text'] = language_ind['language'] + '<br>' + 'Population ' + language_ind[
+                                                                 'population'].astype(str)
+
+new_traces = []
+for i in range(1, 6):
+    new_traces.append(dict(
+        type = 'scattergeo',
+        lon = language_ind[language_ind.risk == i]['longitude'],
+        lat = language_ind[language_ind.risk == i]['latitude'],
+        text = language_ind[language_ind.risk == i]['text'],
+        mode = 'markers',
+        name = labels[i-1],
+        hoverinfo = 'text+name',
+        marker = dict( 
+            size = (language_ind[language_ind.risk == i]['population'] + 1) ** 0.18 * 6,
+            opacity = 0.85,
+            color = colors[i-1],
+            line = dict(color = 'rgb(255, 255, 255)', width = 1)
+        )
+    ))
+
+new_layout = dict(
+         title = 'Languages by Population in India (2016)<br>'
+                 '<sub>Click Legend to Display or Hide Categories</sub>',
+         showlegend = True,
+         legend = dict(
+             x = 0.85, y = 0.4
+         ),
+         geo = dict(
+             scope = 'asia',
+             showland = True,
+             landcolor = 'rgb(250, 250, 250)',
+             subunitwidth = 1,
+             subunitcolor = 'rgb(217, 217, 217)',
+             countrywidth = 1,
+             countrycolor = 'rgb(217, 217, 217)',
+             showlakes = True,
+             lakecolor = 'rgb(255, 255, 255)')
+        )
+
+new_figure = dict(data = new_traces, layout = new_layout)
+```
+
+```{python}
+#collapse-hide
+import plotly.io as pio
+
+pio.show(new_figure)
+```

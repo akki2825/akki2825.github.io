@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Installing Kaldi and MFA"
+categories: [computer-science, nlp]
+author: "Akhilesh"
+date: "2021-11-09"
+---
+
+An installation guide.
+
+This is a short guide to install Kaldi <[https://kaldi-asr.org/](https://kaldi-asr.org/)> and Montreal Forced Aligner <[https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner](https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner)> for Linux and MacOS users.
+
+## Kaldi installation (for Linux and MacOS)
+
+```
+git clone https://github.com/kaldi-asr/kaldi.git kaldi
+cd kaldi/tools
+extras/check_dependencies.sh
+extras/install_mkl.sh
+make
+extras/install_irstlm.sh
+cd ../src/
+./configure
+make depend
+make -j 4
+```
+
+**Pro-tip**: You will run into errors at some point and all you have to do is to keep calm and read them. They mostly suggest you to install more softwares/tools and that is it.
+
+## Montreal Forced Aligner installation
+
+Download MFA (version 1.0.1) from here <[https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner/releases/tag/v1.0.1)](https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner/releases/tag/v1.0.1)>
+
+Linux users click on `montreal-forced-aligner_linux.tar.gz`
+
+MacOS users click on `montreal-forced-aligner_macosx.zip`
+
+Just unzip or untar and follow this detailed guide <[https://montreal-forced-aligner.readthedocs.io/en/latest/](https://montreal-forced-aligner.readthedocs.io/en/latest/)> for the usage.
