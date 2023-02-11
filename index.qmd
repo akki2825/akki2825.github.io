@@ -11,5 +11,3 @@ page-layout: full
 title-block-banner: true
 ---
 
-
-<script defer data-domain="akkikek.xyz" src="http://analytics.slam.phil.hhu.de/js/plausible.js"></script>
