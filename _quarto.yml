@@ -1,15 +1,14 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   title: "Akhilesh"
   navbar:
     right:
       - about.qmd
+      - icon: rss
+        href: index.xml
 format:
   html:
     theme: journal
     css: styles.css
-
-  
