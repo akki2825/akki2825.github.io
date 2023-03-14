@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Akhilesh</title>
+<link>https://akkikek.xyz/index.html</link>
+<atom:link href="https://akkikek.xyz/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.2.335</generator>
+<lastBuildDate>Tue, 07 Dec 2021 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Installing Aeneas on WSL and MacOS</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>An installation guide.</p>
+<p>This is a detailed guide to install Aeneas (<a href="https://github.com/akki2825/aeneas" class="uri">https://github.com/akki2825/aeneas</a>) that supports python3.6+ on Windows Subsystem for Linux (WSL) and MacOS.</p>
+<section id="windows-subsystem-for-linux-wsl" class="level2">
+<h2 class="anchored" data-anchor-id="windows-subsystem-for-linux-wsl">Windows Subsystem for Linux (WSL)</h2>
+<ul>
+<li><p>Go to Search bar on the bottom left of the screen (next to the Windows icon) and search for <code>Command Prompt</code>. Right click on <code>Command Prompt</code> icon and select <code>Run as administrator</code>. This should open the command prompt.</p></li>
+<li><p>Type <code>wsl --install</code> and press <code>Enter</code>. If you run into any errors, it is most likely the case that your windows version doesn’t support WSL or you’re internet is unstable.</p></li>
+<li><p>The above process might take a few minutes. Once done, go to your browser and type <code>https://aka.ms/wslstore</code> and press <code>Enter</code>.</p></li>
+<li><p>Once the above webpage loads, scroll a bit down and click on <code>Ubuntu</code>. Subsequently click on <code>Get</code> and <code>Install</code>.</p></li>
+<li><p>Once the <code>Ubuntu</code> application opens, enter a username and password that you can frequently remember.</p></li>
+</ul>
+<p>Copy and Paste (right-click on the terminal to paste) the below code:</p>
+<pre><code>sudo apt-get update
+sudo apt-get upgrade</code></pre>
+<section id="easy-installation" class="level3">
+<h3 class="anchored" data-anchor-id="easy-installation">Easy Installation</h3>
+<p>Download the script from here (<a href="https://gist.github.com/akki2825/3b38a9f33170b31617b141e53745565b" class="uri">https://gist.github.com/akki2825/3b38a9f33170b31617b141e53745565b</a>) and run this shell script using:</p>
+<pre><code>git clone https://gist.github.com/akki2825/3b38a9f33170b31617b141e53745565b
+cd 3b38a9f33170b31617b141e53745565b/
+sh install_py3_aeneas.sh</code></pre>
+</section>
+<section id="detailed-installation" class="level3">
+<h3 class="anchored" data-anchor-id="detailed-installation">Detailed Installation</h3>
+<p><strong>Clone the py3-aeneas repository</strong></p>
+<pre><code>git clone https://github.com/akki2825/aeneas
+cd aeneas/</code></pre>
+<p><strong>Install system dependencies</strong></p>
+<pre><code>sudo apt-get install -y python3-dev
+sudo apt-get install python3-pip
+sudo apt-get install make autoconf automake libtool pkg-config
+sudo apt-get install libespeak-dev
+sudo apt-get install ffmpeg
+sudo apt-get install espeak
+sudo apt-get install espeak-data</code></pre>
+<p><strong>Install Python packages</strong></p>
+<pre><code>sudo pip3 install numpy
+sudo pip3 install py3-aeneas</code></pre>
+<p><strong>Compile Python C/C++ extensions</strong></p>
+<pre><code>sudo python3 setup.py build_ext --inplace</code></pre>
+<p><strong>Check Setup</strong></p>
+<pre><code>sudo python3 -m aeneas.diagnostics</code></pre>
+</section>
+</section>
+<section id="macos" class="level2">
+<h2 class="anchored" data-anchor-id="macos">MacOS</h2>
+<p>Copy and Paste the below code in the terminal (using Command+C and Command+V):</p>
+<p><strong>Install Brew</strong></p>
+<pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
+<section id="easy-installation-1" class="level3">
+<h3 class="anchored" data-anchor-id="easy-installation-1">Easy Installation</h3>
+<p>Download the script from here (<a href="https://gist.github.com/akki2825/8014a2800eaf638eee2989974655c98f" class="uri">https://gist.github.com/akki2825/8014a2800eaf638eee2989974655c98f</a>) and run this shell script using:</p>
+<pre><code>git clone https://gist.github.com/akki2825/8014a2800eaf638eee2989974655c98f
+cd 8014a2800eaf638eee2989974655c98f/
+sh install_py3_aeneas.sh</code></pre>
+</section>
+<section id="detailed-installation-1" class="level3">
+<h3 class="anchored" data-anchor-id="detailed-installation-1">Detailed installation</h3>
+<p><strong>Clone the py3-aeneas repository</strong></p>
+<pre><code>git clone https://github.com/akki2825/aeneas
+cd aeneas/</code></pre>
+<p><strong>Install system dependencies</strong></p>
+<pre><code>brew install python3
+brew install python3-dev
+brew install python3-pip
+brew install ffmpeg
+brew install espeak
+brew install espeak-data</code></pre>
+<p><strong>Install Python packages</strong></p>
+<pre><code>sudo pip3 install numpy
+sudo pip3 install py3-aeneas</code></pre>
+<p><strong>Compile Python C/C++ extensions</strong></p>
+<pre><code>sudo python3 setup.py build_ext --inplace</code></pre>
+<p><strong>Check Setup</strong></p>
+<pre><code>sudo python3 -m aeneas.diagnostics</code></pre>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>computer-science</category>
+  <category>nlp</category>
+  <guid>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</guid>
+  <pubDate>Tue, 07 Dec 2021 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Installing Kaldi and MFA</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/mfa/2021-11-09-mfa.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>An installation guide.</p>
+<p>This is a short guide to install Kaldi &lt;<a href="https://kaldi-asr.org/">https://kaldi-asr.org/</a>&gt; and Montreal Forced Aligner &lt;<a href="https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner">https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner</a>&gt; for Linux and MacOS users.</p>
+<section id="kaldi-installation-for-linux-and-macos" class="level2">
+<h2 class="anchored" data-anchor-id="kaldi-installation-for-linux-and-macos">Kaldi installation (for Linux and MacOS)</h2>
+<pre><code>git clone https://github.com/kaldi-asr/kaldi.git kaldi
+cd kaldi/tools
+extras/check_dependencies.sh
+extras/install_mkl.sh
+make
+extras/install_irstlm.sh
+cd ../src/
+./configure
+make depend
+make -j 4</code></pre>
+<p><strong>Pro-tip</strong>: You will run into errors at some point and all you have to do is to keep calm and read them. They mostly suggest you to install more softwares/tools and that is it.</p>
+</section>
+<section id="montreal-forced-aligner-installation" class="level2">
+<h2 class="anchored" data-anchor-id="montreal-forced-aligner-installation">Montreal Forced Aligner installation</h2>
+<p>Download MFA (version 1.0.1) from here &lt;<a href="https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner/releases/tag/v1.0.1">https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner/releases/tag/v1.0.1)</a>&gt;</p>
+<p>Linux users click on <code>montreal-forced-aligner_linux.tar.gz</code></p>
+<p>MacOS users click on <code>montreal-forced-aligner_macosx.zip</code></p>
+<p>Just unzip or untar and follow this detailed guide &lt;<a href="https://montreal-forced-aligner.readthedocs.io/en/latest/">https://montreal-forced-aligner.readthedocs.io/en/latest/</a>&gt; for the usage.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>computer-science</category>
+  <category>nlp</category>
+  <guid>https://akkikek.xyz/posts/mfa/2021-11-09-mfa.html</guid>
+  <pubDate>Tue, 09 Nov 2021 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Understanding the spread of Extinct and Endangered languages across India</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Visualizing the spread of low resource languages across India.</p>
+<section id="data-description" class="level2">
+<h2 class="anchored" data-anchor-id="data-description">Data Description</h2>
+<p>The dataset of extinct and endangered languages around the world is created by The Guardian and is available <a href="https://www.kaggle.com/the-guardian/extinct-languages">here</a>.</p>
+<p>Variables: The name of language, longitude, latitude, degree of endangerment and the number of speakers.</p>
+<section id="data-visualisation" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualisation">Data Visualisation</h3>
+<p>Languages by latitude/longitude and Population are plotted.</p>
+<p>The interactive visualisation of Languages by Latitude/longitude inform us, where all the extinct and endangered languages are located across India.</p>
+<p>Similarly, Languages by number of speakers is plotted.</p>
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
+<span id="cb1-2"><span class="im" style="color: #00769E;">import</span> numpy <span class="im" style="color: #00769E;">as</span> np</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;">import</span> pandas <span class="im" style="color: #00769E;">as</span> pd</span>
+<span id="cb1-4">pd.options.mode.chained_assignment <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="im" style="color: #00769E;">from</span> IPython.display <span class="im" style="color: #00769E;">import</span> HTML</span>
+<span id="cb1-7"><span class="im" style="color: #00769E;">from</span> chart_studio <span class="im" style="color: #00769E;">import</span> plotly</span>
+<span id="cb1-8"><span class="im" style="color: #00769E;">import</span> plotly.graph_objs <span class="im" style="color: #00769E;">as</span> go</span>
+<span id="cb1-9"><span class="im" style="color: #00769E;">from</span> plotly <span class="im" style="color: #00769E;">import</span> tools</span>
+<span id="cb1-10"><span class="im" style="color: #00769E;">from</span> plotly.offline <span class="im" style="color: #00769E;">import</span> iplot, init_notebook_mode</span>
+<span id="cb1-11">init_notebook_mode()</span>
+<span id="cb1-12"></span>
+<span id="cb1-13">language_data <span class="op" style="color: #5E5E5E;">=</span> pd.read_csv(<span class="st" style="color: #20794D;">'data.csv'</span>, usecols<span class="op" style="color: #5E5E5E;">=</span>[<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">10</span>, <span class="dv" style="color: #AD0000;">12</span>, <span class="dv" style="color: #AD0000;">13</span>])</span>
+<span id="cb1-14">language_data <span class="op" style="color: #5E5E5E;">=</span> language_data.rename(</span>
+<span id="cb1-15">    columns<span class="op" style="color: #5E5E5E;">=</span>{<span class="st" style="color: #20794D;">'Name in English'</span>:<span class="st" style="color: #20794D;">'language'</span>, <span class="st" style="color: #20794D;">'Country codes alpha 3'</span>:<span class="st" style="color: #20794D;">'locations'</span>,</span>
+<span id="cb1-16">             <span class="st" style="color: #20794D;">'Degree of endangerment'</span>:<span class="st" style="color: #20794D;">'risk'</span>, <span class="st" style="color: #20794D;">'Number of speakers'</span>:<span class="st" style="color: #20794D;">'population'</span>})</span>
+<span id="cb1-17">language_data.columns <span class="op" style="color: #5E5E5E;">=</span> language_data.columns.<span class="bu" style="color: null;">str</span>.lower()</span>
+<span id="cb1-18">language_data[<span class="st" style="color: #20794D;">'risk'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_data[<span class="st" style="color: #20794D;">'risk'</span>].<span class="bu" style="color: null;">str</span>.title()</span>
+<span id="cb1-19">language_data[<span class="st" style="color: #20794D;">'population'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_data[<span class="st" style="color: #20794D;">'population'</span>].fillna(<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb1-20"></span>
+<span id="cb1-21"><span class="co" style="color: #5E5E5E;"># endangered or extinct languages in India</span></span>
+<span id="cb1-22">language_ind <span class="op" style="color: #5E5E5E;">=</span> language_data[language_data[<span class="st" style="color: #20794D;">'locations'</span>].<span class="bu" style="color: null;">str</span>.contains(<span class="st" style="color: #20794D;">'IND'</span>) <span class="op" style="color: #5E5E5E;">==</span> <span class="va" style="color: #111111;">True</span>]</span>
+<span id="cb1-23"></span>
+<span id="cb1-24">language_ind[<span class="st" style="color: #20794D;">'risk'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_ind[<span class="st" style="color: #20794D;">'risk'</span>].replace(</span>
+<span id="cb1-25">    [<span class="st" style="color: #20794D;">'Vulnerable'</span>, <span class="st" style="color: #20794D;">'Definitely Endangered'</span>, <span class="st" style="color: #20794D;">'Severely Endangered'</span>,</span>
+<span id="cb1-26">     <span class="st" style="color: #20794D;">'Critically Endangered'</span>, <span class="st" style="color: #20794D;">'Extinct'</span>], [<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>])</span>
+<span id="cb1-27"></span>
+<span id="cb1-28">language_ind <span class="op" style="color: #5E5E5E;">=</span> language_ind[[<span class="st" style="color: #20794D;">'language'</span>, <span class="st" style="color: #20794D;">'risk'</span>, <span class="st" style="color: #20794D;">'population'</span>, <span class="st" style="color: #20794D;">'latitude'</span>, <span class="st" style="color: #20794D;">'longitude'</span>]]</span></code></pre></div>
+</details>
+</div>
+</section>
+<section id="languages-by-latitudelongitude" class="level3">
+<h3 class="anchored" data-anchor-id="languages-by-latitudelongitude">Languages by Latitude/Longitude</h3>
+<div class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
+<span id="cb2-2">labels <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'Isolated'</span>, <span class="st" style="color: #20794D;">'Threatened'</span>, <span class="st" style="color: #20794D;">'Endangered'</span>, <span class="st" style="color: #20794D;">'Abandoned'</span>, <span class="st" style="color: #20794D;">'Extinct'</span>]</span>
+<span id="cb2-3">colors <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'rgb(0, 157, 220)'</span>, <span class="st" style="color: #20794D;">'rgb(128, 206, 237)'</span>, <span class="st" style="color: #20794D;">'rgb(255, 182, 128)'</span>,</span>
+<span id="cb2-4">          <span class="st" style="color: #20794D;">'rgb(255, 115, 13)'</span>, <span class="st" style="color: #20794D;">'rgb(242, 23, 13)'</span>]</span>
+<span id="cb2-5"></span>
+<span id="cb2-6">traces <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb2-7"><span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">6</span>):</span>
+<span id="cb2-8">    traces.append(<span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb2-9">        <span class="bu" style="color: null;">type</span> <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'scattergeo'</span>,</span>
+<span id="cb2-10">        lon <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'longitude'</span>],</span>
+<span id="cb2-11">        lat <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'latitude'</span>],</span>
+<span id="cb2-12">        text <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'language'</span>],</span>
+<span id="cb2-13">        mode <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'markers'</span>,</span>
+<span id="cb2-14">        name <span class="op" style="color: #5E5E5E;">=</span> labels[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb2-15">        marker <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>( </span>
+<span id="cb2-16">            size <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">12</span>,</span>
+<span id="cb2-17">            opacity <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>,</span>
+<span id="cb2-18">            color <span class="op" style="color: #5E5E5E;">=</span> colors[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb2-19">            line <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(color <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>, width <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb2-20">        )</span>
+<span id="cb2-21">    ))</span>
+<span id="cb2-22"><span class="co" style="color: #5E5E5E;"># print(traces)</span></span>
+<span id="cb2-23">layout <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb2-24">         title <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'Languages by Latitude/Longitude in India (2016)&lt;br&gt;'</span></span>
+<span id="cb2-25">                 <span class="st" style="color: #20794D;">'&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;'</span>,</span>
+<span id="cb2-26">         showlegend <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
+<span id="cb2-27">         legend <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb2-28">             x <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>, y <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.4</span></span>
+<span id="cb2-29">         ),</span>
+<span id="cb2-30">        geo <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb2-31">                 scope <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'asia'</span>,</span>
+<span id="cb2-32">                 showland <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
+<span id="cb2-33">                 landcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(250, 250, 250)'</span>,</span>
+<span id="cb2-34">                 subunitwidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb2-35">                 subunitcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb2-36">                 countrywidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb2-37">                 countrycolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb2-38">                 showlakes <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
+<span id="cb2-39">                 lakecolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>)</span>
+<span id="cb2-40">        )</span>
+<span id="cb2-41"></span>
+<span id="cb2-42"></span>
+<span id="cb2-43">figure <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(data <span class="op" style="color: #5E5E5E;">=</span> traces, layout <span class="op" style="color: #5E5E5E;">=</span> layout)</span></code></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="3">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
+<span id="cb3-2"><span class="im" style="color: #00769E;">import</span> plotly.io <span class="im" style="color: #00769E;">as</span> pio</span>
+<span id="cb3-3"></span>
+<span id="cb3-4">pio.show(figure)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="40b05a75-5919-4b6a-b4bc-7862b3f822ac" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("40b05a75-5919-4b6a-b4bc-7862b3f822ac")) {                    Plotly.newPlot(                        "40b05a75-5919-4b6a-b4bc-7862b3f822ac",                        [{"lat":[19.5804,29.4778,22.1467,12.0178,24.7667,27.7365,19.5908,25.691,26.7554,22.3297,24.7451,23.7752,22.9988,26.2934,21.637,30.0976,19.1244,26.9367,26.4361,11.4369,21.8003,20.3034,27.1275,24.4521,28.3527,26.1603,27.5277,25.9284,27.739,25.0358,25.7553,26.7799,24.7368,34.0617,25.9777,24.7218,25.9629,25.8691,26.6032,25.5027,24.297,26.2934,24.9661,25.958,26.8279,24.577,24.1968,26.9759,21.8003,25.6811,18.7086,28.2632,27.4059,26.0518,25.185,27.5228,28.1688,22.4922,25.2794,25.5027,27.1618,28.038,25.6019,22.1263,24.1517,24.6769,28.0331,25.2198,32.6578,28.2463,24.1467,25.6712,27.8827,28.12,30.7229,28.1155,28.8735,27.1935,35.0659,33.8886,34.3706,32.2871],"lon":[80.4418,79.8486,85.2758,75.7067,93.8946,85.6858,83.9575,91.8676,92.8674,86.0449,85.3124,91.6918,92.9223,93.2299,86.4404,79.1235,83.2104,95.1745,94.6472,76.5032,85.4956,80.2441,91.9335,93.2354,95.2294,94.3725,93.0981,90.9777,86.839,94.4824,94.1308,94.9493,92.9003,77.5909,94.5922,93.6584,94.9713,94.7131,94.9603,94.2681,92.4499,94.9493,93.5375,94.2462,95.3623,93.3178,93.3563,95.4656,86.8139,94.367,83.5839,95.0537,96.427,95.1031,93.9715,93.8177,94.7433,84.1552,93.6694,93.5595,95.7952,94.2022,93.8891,87.0776,93.9385,94.3835,93.0651,94.1583,77.5415,95.3668,92.3071,94.779,96.5093,95.88,79.7387,96.2896,94.3807,92.351,76.1901,76.3,76.0144,78.2652],"marker":{"color":"rgb(0, 157, 220)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":12},"mode":"markers","name":"Isolated","text":["Gondi","Kumaoni","Kurux (India)","Tulu","Meithei","Tamang","Kui","Khasi","Bodo","Mundari","Angika","Kokborok","Mizo","Karbi","Ho","Garhwali","Sora","Konyak","Ao","Irula","Kharia","Korku","Tshangla","Thado","Adi","Lhota","Nyishi","Rabha","Sherpa","Tangkhul","Angami","Phom","Dimasa","Ladakhi","Simi","Kabui","Yimchungru","Chokri","Sangtam","Mao","Bishnupriya Manipuri Creole","Chang","Nruanghmei","Rengma","Cuona Menba","Hmar","Paite","Wancho","Bhumji","Kheza","Gutob","Minyong","Tangsa","Khiamngan","Maram","Apatani","Galo","Korwa","Liangmai","Zeme","Nocte","Tagin","Mzieme","Koda","Anal","Maring","Bangni","Khoirao","Manchad","Padam","Hrangkhol","Pochuri","Khampti","Taruang","Rongpo","Miju","Bokar","Sherdukpen","Balti","Padri","Purik","Spiti"],"type":"scattergeo"},{"lat":[32.4356,31.4099,26.9612,31.2738,16.6151,18.9478,27.096,23.7853,31.4403,11.6952,11.3642,32.9072,20.5093,18.2763,30.4859,33.5413,31.541,33.1835,25.2844,25.7603,27.1153,27.1911,21.0742,25.7801,23.5237,25.6514,24.1968,21.4735,22.1874,27.7078,28.6496,28.664,22.4719,27.839,18.667,24.0414,27.3351,27.5569,21.8411,27.1666,32.7503,32.4912,24.4171,34.6478,28.9889,31.7748,28.488,32.519,30.0037,30.0595,32.0406,29.0105,27.3327,27.3937,27.2546,28.1834,28.4735,34.55,33.3947,30.645,32.0267,27.1667,34.0833],"lon":[76.1242,76.9921,94.0539,77.1295,81.6284,83.5839,87.7356,85.4736,77.1487,75.9375,76.5266,76.5307,78.1787,82.9385,78.0908,76.333,78.3764,76.5747,93.2189,90.3955,88.4687,94.1528,85.6164,92.5927,92.9003,93.2409,93.587,74.0258,92.6477,94.0374,95.8419,94.0347,84.9023,92.8784,83.0346,93.6639,92.5735,96.7456,87.2973,92.6312,76.2451,76.8383,94.378,76.4978,94.4439,78.4753,95.2954,77.6733,80.5641,80.7824,77.1075,94.7653,92.384,91.8965,92.5323,95.2651,96.4764,73.8833,76.1352,78.3627,77.893,92.6312,76.85],"marker":{"color":"rgb(128, 206, 237)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":12},"mode":"markers","name":"Threatened","text":["Kangdi","Mandeali","Mising","Mahasui","Kurru","Kuvi","Limbu","Malto","Kului","Kodagu","Badaga","Chambeali","Kolami","Konda","Jaunsari","Bhadravahi","Kinnauri","Churahi","Kachari","Koch","Lepcha","Deori","Juang","Tiwa","Mara","Biete","Gangte","Nahali","Bawm","Hill Miri","Idu","Motuo Menba","Asur","Sulung","Gorum","Kom","Miji","Singpho","Turi","Aka","Bunan","Bharmauri","Moyon","Brokshat","Bori","Jangshung","Milang","Tinan","Darma","Byangsi","Kanashi","Khamba","Lishpa","Dakpa","Khowa","Pasi","Zaiwa","Kundal Shahi","Bhalesi","Jad","Khasali","Koro","Zangskari"],"type":"scattergeo"},{"lat":[18.2293,19.1659,26.6523,27.5033,26.5688,25.2844],"lon":[82.727,82.6391,94.2901,95.2185,89.1979,91.1755],"marker":{"color":"rgb(255, 182, 128)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":12},"mode":"markers","name":"Endangered","text":["Geta?","Remo","Aiton","Tai Phake","Mech","A'tong"],"type":"scattergeo"},{"lat":[18.5629,30.9823,18.3858,11.6952,33.4589,11.4369,29.8692,24.2569,8.0932,19.8287,8.2549,31.194,6.85,24.4971,21.7594,11.4154,7.915,20.5402,7.9504,19.0621,24.2319,11.3184,26.6867,24.297,24.3521,7.3134,28.3914,28.4638,11.0112,31.0011,25.2844,7.0245,26.8485,26.9024,29.1473,10.639,11.5446,12.6028,12.2326,11.6952,24.4671,20.1384],"lon":[82.8039,77.1569,82.7819,75.6738,76.9152,76.3549,79.0686,94.0759,93.4963,78.2281,93.1022,77.0471,93.8726,93.6145,85.935,76.8576,93.3837,76.0913,93.576,83.4851,93.7463,76.8273,89.5056,93.4497,93.5925,93.6968,93.3837,93.3041,34.2333,77.3107,90.4614,93.8232,94.5648,94.757,94.5538,92.4938,92.2576,92.752,92.9031,76.4648,94.1473,84.0289],"marker":{"color":"rgb(255, 115, 13)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":12},"mode":"markers","name":"Abandoned","text":["Parji","Sirmaudi","Gadaba","Koraga","Pangvali","Kuruba","Bangani","Lamgang","Muot","Naiki","Pu","Baghati","Takahanyilang","Aimol","Birhor","Kota","Luro","Nihali","Sanenyo","Pengo","Koireng","Toda","Toto","Tarao","Purum","Lamongse","Mra","Na","Aka","Handuri","Ruga","Shompen","Tai Nora","Tai Rong","Tangam","Onge","Sentilese","Jarawa","Great andamanese","Bellari","Langrong","Manda"],"type":"scattergeo"},{"lat":[26.5393,24.8415,24.976,30.0358,24.6445,29.9333],"lon":[92.5378,94.0539,94.2407,80.1342,94.0567,80.0326],"marker":{"color":"rgb(242, 23, 13)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":12},"mode":"markers","name":"Extinct","text":["Ahom","Andro","Chairel","Rangkas","Sengmai","Tolcha"],"type":"scattergeo"}],                        {"geo":{"countrycolor":"rgb(217, 217, 217)","countrywidth":1,"lakecolor":"rgb(255, 255, 255)","landcolor":"rgb(250, 250, 250)","scope":"asia","showlakes":true,"showland":true,"subunitcolor":"rgb(217, 217, 217)","subunitwidth":1},"legend":{"x":0.85,"y":0.4},"showlegend":true,"title":{"text":"Languages by Latitude/Longitude in India (2016)<br><sub>Click Legend to Display or Hide Categories</sub>"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('40b05a75-5919-4b6a-b4bc-7862b3f822ac');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+</section>
+<section id="languages-by-population" class="level3">
+<h3 class="anchored" data-anchor-id="languages-by-population">Languages by Population</h3>
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
+<span id="cb4-2">language_ind <span class="op" style="color: #5E5E5E;">=</span> language_ind.sort_values(<span class="st" style="color: #20794D;">'population'</span>, ascending <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">False</span>)</span>
+<span id="cb4-3">language_ind[<span class="st" style="color: #20794D;">'text'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_ind[<span class="st" style="color: #20794D;">'language'</span>] <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">'&lt;br&gt;'</span> <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">'Population '</span> <span class="op" style="color: #5E5E5E;">+</span> language_ind[</span>
+<span id="cb4-4">                                                                 <span class="st" style="color: #20794D;">'population'</span>].astype(<span class="bu" style="color: null;">str</span>)</span>
+<span id="cb4-5"></span>
+<span id="cb4-6">new_traces <span class="op" style="color: #5E5E5E;">=</span> []</span>
+<span id="cb4-7"><span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">6</span>):</span>
+<span id="cb4-8">    new_traces.append(<span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb4-9">        <span class="bu" style="color: null;">type</span> <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'scattergeo'</span>,</span>
+<span id="cb4-10">        lon <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'longitude'</span>],</span>
+<span id="cb4-11">        lat <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'latitude'</span>],</span>
+<span id="cb4-12">        text <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'text'</span>],</span>
+<span id="cb4-13">        mode <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'markers'</span>,</span>
+<span id="cb4-14">        name <span class="op" style="color: #5E5E5E;">=</span> labels[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb4-15">        hoverinfo <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'text+name'</span>,</span>
+<span id="cb4-16">        marker <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>( </span>
+<span id="cb4-17">            size <span class="op" style="color: #5E5E5E;">=</span> (language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'population'</span>] <span class="op" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span>) <span class="op" style="color: #5E5E5E;">**</span> <span class="fl" style="color: #AD0000;">0.18</span> <span class="op" style="color: #5E5E5E;">*</span> <span class="dv" style="color: #AD0000;">6</span>,</span>
+<span id="cb4-18">            opacity <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>,</span>
+<span id="cb4-19">            color <span class="op" style="color: #5E5E5E;">=</span> colors[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
+<span id="cb4-20">            line <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(color <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>, width <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb4-21">        )</span>
+<span id="cb4-22">    ))</span>
+<span id="cb4-23"></span>
+<span id="cb4-24">new_layout <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb4-25">         title <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'Languages by Population in India (2016)&lt;br&gt;'</span></span>
+<span id="cb4-26">                 <span class="st" style="color: #20794D;">'&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;'</span>,</span>
+<span id="cb4-27">         showlegend <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
+<span id="cb4-28">         legend <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb4-29">             x <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>, y <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.4</span></span>
+<span id="cb4-30">         ),</span>
+<span id="cb4-31">         geo <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
+<span id="cb4-32">             scope <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'asia'</span>,</span>
+<span id="cb4-33">             showland <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
+<span id="cb4-34">             landcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(250, 250, 250)'</span>,</span>
+<span id="cb4-35">             subunitwidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb4-36">             subunitcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb4-37">             countrywidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
+<span id="cb4-38">             countrycolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb4-39">             showlakes <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
+<span id="cb4-40">             lakecolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>)</span>
+<span id="cb4-41">        )</span>
+<span id="cb4-42"></span>
+<span id="cb4-43">new_figure <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(data <span class="op" style="color: #5E5E5E;">=</span> new_traces, layout <span class="op" style="color: #5E5E5E;">=</span> new_layout)</span></code></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="5">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
+<span id="cb5-2"><span class="im" style="color: #00769E;">import</span> plotly.io <span class="im" style="color: #00769E;">as</span> pio</span>
+<span id="cb5-3"></span>
+<span id="cb5-4">pio.show(new_figure)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="03cedbcd-56b3-4045-8ccc-946ce08dff89" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("03cedbcd-56b3-4045-8ccc-946ce08dff89")) {                    Plotly.newPlot(                        "03cedbcd-56b3-4045-8ccc-946ce08dff89",                        [{"hoverinfo":"text+name","lat":[19.5804,29.4778,22.1467,12.0178,24.7667,27.7365,19.5908,25.691,26.7554,22.3297,24.7451,23.7752,22.9988,26.2934,21.637,30.0976,19.1244,26.9367,26.4361,11.4369,21.8003,20.3034,27.1275,24.4521,28.3527,26.1603,27.5277,25.9284,27.739,25.0358,25.7553,26.7799,24.7368,34.0617,25.9777,24.7218,25.9629,25.8691,26.6032,25.5027,24.297,26.2934,24.9661,25.958,26.8279,24.577,24.1968,26.9759,21.8003,25.6811,18.7086,28.2632,27.4059,26.0518,25.185,27.5228,28.1688,22.4922,25.2794,25.5027,27.1618,28.038,25.6019,22.1263,24.1517,24.6769,28.0331,25.2198,32.6578,28.2463,24.1467,25.6712,27.8827,28.12,30.7229,28.1155,28.8735,27.1935,32.2871,34.3706,33.8886,35.0659],"lon":[80.4418,79.8486,85.2758,75.7067,93.8946,85.6858,83.9575,91.8676,92.8674,86.0449,85.3124,91.6918,92.9223,93.2299,86.4404,79.1235,83.2104,95.1745,94.6472,76.5032,85.4956,80.2441,91.9335,93.2354,95.2294,94.3725,93.0981,90.9777,86.839,94.4824,94.1308,94.9493,92.9003,77.5909,94.5922,93.6584,94.9713,94.7131,94.9603,94.2681,92.4499,94.9493,93.5375,94.2462,95.3623,93.3178,93.3563,95.4656,86.8139,94.367,83.5839,95.0537,96.427,95.1031,93.9715,93.8177,94.7433,84.1552,93.6694,93.5595,95.7952,94.2022,93.8891,87.0776,93.9385,94.3835,93.0651,94.1583,77.5415,95.3668,92.3071,94.779,96.5093,95.88,79.7387,96.2896,94.3807,92.351,78.2652,76.0144,76.3,76.1901],"marker":{"color":"rgb(0, 157, 220)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":[86.3366119636309,81.7493697607026,79.79296984752025,79.5558497883654,75.09224963896372,74.50487376905853,71.00868409177278,70.94967444103001,70.78072209599058,68.4955539019062,68.3450772718504,67.56295369990522,64.32405566935107,61.70726653665335,61.16771318206442,57.34562049354562,56.205752238412806,56.12454951433301,55.91916803177302,53.99294799878567,53.99294799878567,53.99294799878567,53.64780667247976,53.547310893909696,52.43635754126245,52.43635754126245,52.43635754126245,51.268215147156255,50.87333451319944,50.76491962186188,50.10201010496685,49.46919075562823,48.641974131219115,48.080178209994216,47.99743212356851,47.22177659159536,46.94981756065948,46.187286954763465,46.187286954763465,45.88592795198909,45.023806106159455,43.73035624923075,43.60255134767869,43.60255134767869,42.06950621819868,42.06950621819868,42.06950621819868,41.91680189947927,41.60356320224044,40.59328998493983,40.41327100016347,40.41327100016347,40.41327100016347,40.04187033323687,39.85012366604735,39.453517755716206,39.453517755716206,39.453517755716206,39.24820096595052,39.24820096595052,39.03787134061415,38.37387724591943,38.14043004845633,37.13501287306758,36.58184957787556,36.29032739013658,35.673075924211425,35.673075924211425,35.673075924211425,35.673075924211425,35.34524633807604,34.64468799613955,33.0116374536036,31.0996196942555,30.249431640032313,29.299241779728693,27.795947594343147,25.354738138977616,0.0,0.0,0.0,0.0]},"mode":"markers","name":"Isolated","text":["Gondi<br>Population 2713790.0","Kumaoni<br>Population 2003783.0","Kurux (India)<br>Population 1751489.0","Tulu<br>Population 1722768.0","Meithei<br>Population 1250000.0","Tamang<br>Population 1196639.0","Kui<br>Population 916222.0","Khasi<br>Population 912000.0","Bodo<br>Population 900000.0","Mundari<br>Population 750000.0","Angika<br>Population 740892.0","Kokborok<br>Population 695000.0","Mizo<br>Population 529000.0","Karbi<br>Population 420000.0","Ho<br>Population 400000.0","Garhwali<br>Population 279500.0","Sora<br>Population 250000.0","Konyak<br>Population 248000.0","Ao<br>Population 243000.0","Irula<br>Population 200000.0","Kharia<br>Population 200000.0","Korku<br>Population 200000.0","Tshangla<br>Population 193000.0","Thado<br>Population 191000.0","Adi<br>Population 170000.0","Lhota<br>Population 170000.0","Nyishi<br>Population 170000.0","Rabha<br>Population 150000.0","Sherpa<br>Population 143693.0","Tangkhul<br>Population 142000.0","Angami<br>Population 132000.0","Phom<br>Population 123000.0","Dimasa<br>Population 112000.0","Ladakhi<br>Population 105000.0","Simi<br>Population 104000.0","Kabui<br>Population 95000.0","Yimchungru<br>Population 92000.0","Chokri<br>Population 84000.0","Sangtam<br>Population 84000.0","Mao<br>Population 81000.0","Bishnupriya Manipuri Creole<br>Population 72899.0","Chang<br>Population 62000.0","Nruanghmei<br>Population 61000.0","Rengma<br>Population 61000.0","Cuona Menba<br>Population 50000.0","Hmar<br>Population 50000.0","Paite<br>Population 50000.0","Wancho<br>Population 49000.0","Bhumji<br>Population 47000.0","Kheza<br>Population 41000.0","Gutob<br>Population 40000.0","Minyong<br>Population 40000.0","Tangsa<br>Population 40000.0","Khiamngan<br>Population 38000.0","Maram<br>Population 37000.0","Apatani<br>Population 35000.0","Galo<br>Population 35000.0","Korwa<br>Population 35000.0","Liangmai<br>Population 34000.0","Zeme<br>Population 34000.0","Nocte<br>Population 33000.0","Tagin<br>Population 30000.0","Mzieme<br>Population 29000.0","Koda<br>Population 25000.0","Anal<br>Population 23000.0","Maring<br>Population 22000.0","Bangni<br>Population 20000.0","Khoirao<br>Population 20000.0","Manchad<br>Population 20000.0","Padam<br>Population 20000.0","Hrangkhol<br>Population 19000.0","Pochuri<br>Population 17000.0","Khampti<br>Population 13000.0","Taruang<br>Population 9332.0","Rongpo<br>Population 8000.0","Miju<br>Population 6700.0","Bokar<br>Population 5000.0","Sherdukpen<br>Population 3000.0","Spiti<br>Population -1.0","Purik<br>Population -1.0","Padri<br>Population -1.0","Balti<br>Population -1.0"],"type":"scattergeo"},{"hoverinfo":"text+name","lat":[32.4356,31.4099,26.9612,31.2738,16.6151,18.9478,27.096,23.7853,31.4403,11.6952,11.3642,32.9072,20.5093,18.2763,30.4859,33.5413,31.541,33.1835,25.2844,25.7603,27.1153,27.1911,21.0742,25.7801,23.5237,25.6514,24.1968,21.4735,22.1874,27.7078,28.6496,28.664,22.4719,27.839,27.3351,21.8411,27.5569,24.0414,18.667,27.1666,32.7503,32.4912,24.4171,34.6478,28.9889,31.7748,28.488,32.519,30.0037,30.0595,32.0406,27.3327,29.0105,28.1834,28.4735,27.2546,27.3937,34.55,27.1667,32.0267,30.645,33.3947,34.0833],"lon":[76.1242,76.9921,94.0539,77.1295,81.6284,83.5839,87.7356,85.4736,77.1487,75.9375,76.5266,76.5307,78.1787,82.9385,78.0908,76.333,78.3764,76.5747,93.2189,90.3955,88.4687,94.1528,85.6164,92.5927,92.9003,93.2409,93.587,74.0258,92.6477,94.0374,95.8419,94.0347,84.9023,92.8784,92.5735,87.2973,96.7456,93.6639,83.0346,92.6312,76.2451,76.8383,94.378,76.4978,94.4439,78.4753,95.2954,77.6733,80.5641,80.7824,77.1075,92.384,94.7653,95.2651,96.4764,92.5323,91.8965,73.8833,92.6312,77.893,78.3627,76.1352,76.85],"marker":{"color":"rgb(128, 206, 237)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":[79.3655631530961,66.0324927342777,64.77638039262101,63.58312841163028,58.08089991971514,58.08089991971514,58.08089991971514,55.14659937199434,52.47902917081018,52.22268408040219,50.272441713314706,49.725956115603395,49.38598221005333,49.1456604920545,48.85351703234004,44.33535089142367,44.11572559142296,43.62812074029206,43.3416995707383,38.601028554682095,38.37387724591943,37.90028605681104,36.58184957787556,36.58184957787556,36.29032739013658,35.34524633807604,33.87293965112976,33.87293965112976,33.454911117693754,32.53946354968335,32.08658302473608,30.897517542758173,29.531129927065606,28.723112762608096,27.795947594343147,27.795947594343147,27.795947594343147,27.795947594343147,27.795947594343147,26.701864617316836,26.701864617316836,26.67296264604543,26.329868233143962,25.354738138977616,23.570876172229564,23.570876172229564,23.570876172229564,23.570876172229564,23.037339000722696,22.97339377315163,22.382045536812686,22.382045536812686,22.382045536812686,20.8079542507168,20.8079542507168,20.8079542507168,20.8079542507168,18.370545012850698,0.0,0.0,0.0,0.0,0.0]},"mode":"markers","name":"Threatened","text":["Kangdi<br>Population 1700000.0","Mandeali<br>Population 611930.0","Mising<br>Population 550000.0","Mahasui<br>Population 496024.0","Kurru<br>Population 300000.0","Kuvi<br>Population 300000.0","Limbu<br>Population 300000.0","Malto<br>Population 224926.0","Kului<br>Population 170770.0","Kodagu<br>Population 166187.0","Badaga<br>Population 134514.0","Chambeali<br>Population 126589.0","Kolami<br>Population 121855.0","Konda<br>Population 118597.0","Jaunsari<br>Population 114733.0","Bhadravahi<br>Population 66918.0","Kinnauri<br>Population 65097.0","Churahi<br>Population 61199.0","Kachari<br>Population 59000.0","Koch<br>Population 31000.0","Lepcha<br>Population 30000.0","Deori<br>Population 28000.0","Juang<br>Population 23000.0","Tiwa<br>Population 23000.0","Mara<br>Population 22000.0","Biete<br>Population 19000.0","Gangte<br>Population 15000.0","Nahali<br>Population 15000.0","Bawm<br>Population 14000.0","Hill Miri<br>Population 12000.0","Idu<br>Population 11101.0","Motuo Menba<br>Population 9000.0","Asur<br>Population 7000.0","Sulung<br>Population 6000.0","Miji<br>Population 5000.0","Turi<br>Population 5000.0","Singpho<br>Population 5000.0","Kom<br>Population 5000.0","Gorum<br>Population 5000.0","Aka<br>Population 4000.0","Bunan<br>Population 4000.0","Bharmauri<br>Population 3976.0","Moyon<br>Population 3700.0","Brokshat<br>Population 3000.0","Bori<br>Population 2000.0","Jangshung<br>Population 2000.0","Milang<br>Population 2000.0","Tinan<br>Population 2000.0","Darma<br>Population 1761.0","Byangsi<br>Population 1734.0","Kanashi<br>Population 1500.0","Lishpa<br>Population 1500.0","Khamba<br>Population 1500.0","Pasi<br>Population 1000.0","Zaiwa<br>Population 1000.0","Khowa<br>Population 1000.0","Dakpa<br>Population 1000.0","Kundal Shahi<br>Population 500.0","Koro<br>Population -1.0","Khasali<br>Population -1.0","Jad<br>Population -1.0","Bhalesi<br>Population -1.0","Zangskari<br>Population -1.0"],"type":"scattergeo"},{"hoverinfo":"text+name","lat":[18.2293,19.1659,26.6523,27.5033,26.5688,25.2844],"lon":[82.727,82.6391,94.2901,95.2185,89.1979,91.1755],"marker":{"color":"rgb(255, 182, 128)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":[25.354738138977616,24.53644925763686,23.570876172229564,23.570876172229564,20.8079542507168,0.0]},"mode":"markers","name":"Endangered","text":["Geta?<br>Population 3000.0","Remo<br>Population 2500.0","Aiton<br>Population 2000.0","Tai Phake<br>Population 2000.0","Mech<br>Population 1000.0","A'tong<br>Population -1.0"],"type":"scattergeo"},{"hoverinfo":"text+name","lat":[18.5629,30.9823,18.3858,11.6952,33.4589,11.4369,29.8692,19.8287,8.0932,24.2569,8.2549,31.194,6.85,24.4971,21.7594,11.4154,7.915,20.5402,7.9504,19.0621,24.2319,11.3184,26.6867,24.297,24.3521,7.3134,28.3914,28.4638,11.0112,31.0011,26.8485,29.1473,26.9024,7.0245,25.2844,10.639,11.5446,12.6028,12.2326,24.4671,20.1384,11.6952],"lon":[82.8039,77.1569,82.7819,75.6738,76.9152,76.3549,79.0686,78.2281,93.4963,94.0759,93.1022,77.0471,93.8726,93.6145,85.935,76.8576,93.3837,76.0913,93.576,83.4851,93.7463,76.8273,89.5056,93.4497,93.5925,93.6968,93.3837,93.3041,34.2333,77.3107,94.5648,94.5538,94.757,93.8232,90.4614,92.4938,92.2576,92.752,92.9031,94.1473,84.0289,76.4648],"marker":{"color":"rgb(255, 115, 13)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":[42.25185638389087,38.63324166173221,37.46564644340755,34.520803707531336,34.377781572747146,33.713953922876684,32.53946354968335,31.489014383806357,31.489014383806357,31.489014383806357,27.795947594343147,26.67296264604543,25.354738138977616,24.78325306433304,23.570876172229564,23.570876172229564,23.570876172229564,23.570876172229564,21.813289526399984,21.6724056543786,21.01283973179499,20.83034941877594,20.8079542507168,20.293386099643975,18.39029716392222,17.648883545095693,17.23084323808842,17.23084323808842,16.760741174240543,14.584579576981199,13.769846458731536,13.769846458731536,13.769846458731536,13.769846458731536,13.769846458731536,12.176259132378505,12.176259132378505,11.19639589844169,8.283587716870095,0.0,0.0,0.0]},"mode":"markers","name":"Abandoned","text":["Parji<br>Population 51216.0","Sirmaudi<br>Population 31144.0","Gadaba<br>Population 26262.0","Koraga<br>Population 16665.0","Pangvali<br>Population 16285.0","Kuruba<br>Population 14613.0","Bangani<br>Population 12000.0","Naiki<br>Population 10000.0","Muot<br>Population 10000.0","Lamgang<br>Population 10000.0","Pu<br>Population 5000.0","Baghati<br>Population 3976.0","Takahanyilang<br>Population 3000.0","Aimol<br>Population 2643.0","Birhor<br>Population 2000.0","Kota<br>Population 2000.0","Luro<br>Population 2000.0","Nihali<br>Population 2000.0","Sanenyo<br>Population 1300.0","Pengo<br>Population 1254.0","Koireng<br>Population 1056.0","Toda<br>Population 1006.0","Toto<br>Population 1000.0","Tarao<br>Population 870.0","Purum<br>Population 503.0","Lamongse<br>Population 400.0","Mra<br>Population 350.0","Na<br>Population 350.0","Aka<br>Population 300.0","Handuri<br>Population 138.0","Tai Nora<br>Population 100.0","Tangam<br>Population 100.0","Tai Rong<br>Population 100.0","Shompen<br>Population 100.0","Ruga<br>Population 100.0","Onge<br>Population 50.0","Sentilese<br>Population 50.0","Jarawa<br>Population 31.0","Great andamanese<br>Population 5.0","Langrong<br>Population -1.0","Manda<br>Population -1.0","Bellari<br>Population -1.0"],"type":"scattergeo"},{"hoverinfo":"text+name","lat":[30.0358,24.6445,24.976,24.8415,26.5393,29.9333],"lon":[80.1342,94.0567,94.2407,94.0539,92.5378,80.0326],"marker":{"color":"rgb(242, 23, 13)","line":{"color":"rgb(255, 255, 255)","width":1},"opacity":0.85,"size":[6.0,6.0,6.0,6.0,6.0,0.0]},"mode":"markers","name":"Extinct","text":["Rangkas<br>Population 0.0","Sengmai<br>Population 0.0","Chairel<br>Population 0.0","Andro<br>Population 0.0","Ahom<br>Population 0.0","Tolcha<br>Population -1.0"],"type":"scattergeo"}],                        {"geo":{"countrycolor":"rgb(217, 217, 217)","countrywidth":1,"lakecolor":"rgb(255, 255, 255)","landcolor":"rgb(250, 250, 250)","scope":"asia","showlakes":true,"showland":true,"subunitcolor":"rgb(217, 217, 217)","subunitwidth":1},"legend":{"x":0.85,"y":0.4},"showlegend":true,"title":{"text":"Languages by Population in India (2016)<br><sub>Click Legend to Display or Hide Categories</sub>"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('03cedbcd-56b3-4045-8ccc-946ce08dff89');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>nlp</category>
+  <guid>https://akkikek.xyz/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html</guid>
+  <pubDate>Thu, 30 Jul 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/low-resource-langs-india/image.png" medium="image" type="image/png" height="63" width="144"/>
+</item>
+<item>
+  <title>U.S Government’s take on FOSS (Free and Open Source Software)</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<blockquote class="blockquote">
+<p>Free software is software that respects your freedom.</p>
+</blockquote>
+<p>This is a running blog on how the U.S government <em>uses</em> and <em>advocates</em> Free and Open Source Software.</p>
+<p>The <a href="https://dodcio.defense.gov/Open-Source-Software-FAQ/">US Department of Defence’s (DoD) OSS FAQ</a> states, “continuous and broad peer-review, enabled by publicly available source code, improves software reliability and security through the identification and elimination of defects that might otherwise go unrecognized”.</p>
+<p>From the <a href="https://innovation.defense.gov/software/">DoD Software Acquisition and Practices (SWAP) study</a>: “DoD should use open source when possible to speed development and deployment and leverage the work of others”.</p>
+<p><a href="https://playbook.cio.gov/">Digital Service Playbook</a> was developed by U.S Digital Service and outlines several best practices from the private sector that can help the Government build effective digital services.</p>
+<p><a href="https://sourcecode.cio.gov/">Federal Source Code Policy</a>: “requires agencies, when commissioning new custom software, to release at least 20 percent of new custom-developed code as Open Source Software (OSS)”.</p>
+<p>Here are a few agencies that have embraced the Federal Source Code Policy:</p>
+<ul>
+<li><a href="https://www.ssa.gov/digitalstrategy/m_16_21_Implementation_Plan.html">Social Security Administration (SSA)</a></li>
+<li><a href="https://www.gsa.gov/directives-library/gsa-open-source-software-oss-policy-21071-cio">GSA Open Source Software Policy</a></li>
+<li><a href="https://code.nasa.gov/NASA-M-16-21-Framework.pdf">NASA Federal Source Code Framework</a></li>
+<li><a href="https://www.epa.gov/open/interim-open-source-software-oss-policy">EPA: Interim Open Source Software (OSS)</a></li>
+<li><a href="https://code.gov">https://code.gov</a></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>computer-science</category>
+  <guid>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</guid>
+  <pubDate>Fri, 29 May 2020 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Softwares I use</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="softwares-i-use" class="level2">
+<h2 class="anchored" data-anchor-id="softwares-i-use">Softwares I use</h2>
+<p>Here are the list of softwares I use for almost everything.</p>
+<section id="operating-system" class="level3">
+<h3 class="anchored" data-anchor-id="operating-system">Operating System</h3>
+<p><a href="https://www.archlinux.org/">Arch Linux</a> with all free software.</p>
+</section>
+<section id="web-browser" class="level3">
+<h3 class="anchored" data-anchor-id="web-browser">Web browser</h3>
+<p><a href="https://librewolf-community.gitlab.io/">LibreWolf</a> with vim key bindings.</p>
+</section>
+<section id="terminal" class="level3">
+<h3 class="anchored" data-anchor-id="terminal">Terminal</h3>
+<p><a href="https://st.suckless.org/">st</a></p>
+</section>
+<section id="text-editor" class="level3">
+<h3 class="anchored" data-anchor-id="text-editor">Text Editor</h3>
+<p><a href="https://neovim.io">Neovim</a> and <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a></p>
+</section>
+<section id="mail-client" class="level3">
+<h3 class="anchored" data-anchor-id="mail-client">Mail Client</h3>
+<p><a href="https://neomutt.org/">Neomutt</a> &amp; <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a></p>
+</section>
+<section id="video-player" class="level3">
+<h3 class="anchored" data-anchor-id="video-player">Video player</h3>
+<p><a href="https://mpv.io/">mpv</a></p>
+</section>
+<section id="pdf-viewer" class="level3">
+<h3 class="anchored" data-anchor-id="pdf-viewer">PDF viewer</h3>
+<p><a href="https://en.wikipedia.org/wiki/Zathura_(document_viewer)">Zathura</a></p>
+</section>
+<section id="window-manager" class="level3">
+<h3 class="anchored" data-anchor-id="window-manager">Window Manager</h3>
+<p><a href="https://dwm.suckless.org/">dwm</a></p>
+</section>
+<section id="file-manager" class="level3">
+<h3 class="anchored" data-anchor-id="file-manager">File Manager</h3>
+<p><a href="https://github.com/gokcehan/lf">lf</a></p>
+</section>
+<section id="all-images-related-stuff" class="level3">
+<h3 class="anchored" data-anchor-id="all-images-related-stuff">All images related stuff</h3>
+<p><a href="https://www.gimp.org/">GIMP</a></p>
+</section>
+<section id="torrent-client" class="level3">
+<h3 class="anchored" data-anchor-id="torrent-client">Torrent Client</h3>
+<p><a href="https://wiki.archlinux.org/index.php/Transmission">Transmission</a></p>
+</section>
+<section id="spreadsheet" class="level3">
+<h3 class="anchored" data-anchor-id="spreadsheet">Spreadsheet</h3>
+<p><a href="https://www.libreoffice.org/">LibreOffice</a></p>
+</section>
+<section id="file-manager-1" class="level3">
+<h3 class="anchored" data-anchor-id="file-manager-1">File Manager</h3>
+<p><a href="https://github.com/gokcehan/lf">lf</a></p>
+</section>
+<section id="shell" class="level3">
+<h3 class="anchored" data-anchor-id="shell">Shell</h3>
+<p><a href="https://www.zsh.org/">zsh</a> and <a href="http://fishshell.com/">fish</a></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>personal-config</category>
+  <guid>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</guid>
+  <pubDate>Thu, 21 May 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/softwares/image.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Artificial Neuron</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>About artificial neuron.</p>
+<p>Artificial neuron is simply a computational unit, which makes a particular computation based on other units it is connected to.</p>
+<p><img src="https://akkikek.xyz/akki2825.github.io/images/io_neuron.jpg" alt=""></p>
+<p>Pre-activation (or input activation): a(x) = b + ∑wi + xi</p>
+<p>Neuron (output) activation: h(x) = g(a(x))</p>
+<p>where, g(.) is called activation function, b is called neuron bias and w is the connection weights.</p>
+<p>Activation functions:</p>
+<ul>
+<li><p><strong>Linear activation function</strong></p>
+<p>g(a) = a</p>
+<p>Performs no input squashing</p></li>
+<li><p><strong>Sigmoid activation function</strong></p>
+<p>g(a) = sigm(a) = 1/1 + exp(-a)</p>
+<p>Squashes the neuron’s pre-activation between 0 and 1.</p>
+<p>Always positive</p>
+<p>Bounded</p>
+<p>Strictly increasing</p></li>
+<li><p><strong>Hyperbolic tangent(tanh) activation function</strong></p>
+<p>g(a) = tanh(a)</p>
+<p>Squashes the neuron’s pre-activation between -1 and 1</p>
+<p>Can be positive or negative</p>
+<p>Bounded</p>
+<p>Strictly increasing</p></li>
+<li><p><strong>Rectified Linear Activation function</strong></p>
+<p>g(a) = reclin(a) = max(0,a)</p>
+<p>Bounded below by 0 and always non-negative</p>
+<p>Not upper bounded</p>
+<p>Monotomically increasing</p>
+<p>Tends to give neurons sparse activities. That is, the value is zero across many different sets of inputs.</p></li>
+</ul>
+<p><strong>Capacity of a single neuron</strong></p>
+<p>Capacity essentially means, the complexity of the computation that a neuron can perform.</p>
+<ul>
+<li><p>It could do binary classification with Sigmoid, which can interpret neuron as estimating p(y=1|x). That is, the probability of input ‘x’ belonging to class 1. (Since, we are using sigmoid activation function the output is bounded b/w 0 and 1). It is also known as logistic regression classifier. If the value is greater than 0.5, predict class 1, otherwise, predict 0.</p></li>
+<li><p>The classifier is performing linear classification, so, if we have a problem where we want to classify objects described by input vectors into different classes, if we can draw a hyperplane or a line (in case of 2d) between these two types of objects, then a single artificial neuron could do that for us!</p></li>
+<li><p>However, a single neuron cannot model a non-linearly seperable output.</p></li>
+</ul>
+<p>If the input is transformed in a better representation, we can actually have a linear seperable.</p>
+<p>Thereby, complicated computations cannot be modelled by single neuron. This is the main reason behind why we go for multilayer neural network.</p>
+
+
+
+ ]]></description>
+  <category>machine-learning</category>
+  <guid>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</guid>
+  <pubDate>Wed, 08 Feb 2017 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/artificial-neuron/image.png" medium="image" type="image/png" height="99" width="144"/>
+</item>
+<item>
+  <title>ML implementation</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/ml-implementation/2017-01-31-ml-implementation.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Notes on ML implementation.</p>
+<p>One secret you need to know beneath all of the math, and algorithms, is the “black art” to actually build machine learning models.</p>
+<p><strong>Learning = Representation + Evaluation + Optimization</strong></p>
+<p>The first problem faced by people is the bewildering variety of learning algorithms available. Which one to use? There are literally thousands available, and hundreds more published each year. The key to not getting lost in this huge space is to realise that it consists of combinations of just three components. The components are:</p>
+<p><strong>Representation</strong> : Choosing the representation for a learner is tantamount to choosing the set of classifiers that it can possibly learn. This set is called the hypothesis space.</p>
+<p><strong>Evaluation</strong>: An evaluation function is needed to distinguish good classifiers from bad ones. This might be accuracy, f1 score, squared error, information gain etc</p>
+<p><strong>Optimization</strong>: Finally, we need a method to search among the classifiers in the language for the high scoring one. The choice of optimization technique is key to the efficiency of the learner, and also helps determine the classifier produced if the evaluation function has more than one optimum.</p>
+<p>The fundamental goal of machine learning is to generalize beyond the examples in the training set.</p>
+<p>Here are some of the hacks for implementing ML:</p>
+<p>Do not contaminate your classifier by lots of tuning on the test data</p>
+<p>Of course, holding out data reduces the amount available for training. This can be mitigated by doing cross validation: randomly dividing your training data into (say) ten subsets, holding out each one while training on the rest, testing each learned classifier on the examples it did not see, and averaging the results to see how well the particular parameter setting does.</p>
+<p>Every learner must embody some knowledge or assumptions beyond the data its given in order to generalize beyond it. This was formalized by Wolpart in his famous “no free lunch” theorems, according to which no learner can beat random guessing over all possible function to be learned. Luckily, the function we want to learn in the real world are not drawn uniformly from the set of all mathematically possible functions!</p>
+<p>Very general assumptions – like smoothness, similar examples having similar classes, limited dependencies or limited complexity are often enough to do well, and this is a large part of why ML has been so successful.</p>
+<p>Bias is a learner’s tendency to consistently learn the same wrong thing. Variance is the tendency to learn random things irrespective of the real signal.</p>
+<p>Besides cross validation, there are many methods to combat overfitting. Th most popular one is adding a regularization term to the evaluation function. Anther option is to perform a statistical significance test like chi-square before adding new structures to decide whether the distribution of the class really is different with and without this structure. These techniques are particularly useful when data is very scarce.</p>
+<p>Generalizing correctly becomes exponentially harder as the dimensionality as the dimensionality of the examples grows because a fixed-size training set covers a dwindling fraction of the input space.</p>
+<p>“Blessing of non-uniformity” – in most applications examples are not spread uniformly throughout the instance space, but are concentrated on or near a lower dimensional manifold.</p>
+
+
+
+ ]]></description>
+  <category>machine-learning</category>
+  <guid>https://akkikek.xyz/posts/ml-implementation/2017-01-31-ml-implementation.html</guid>
+  <pubDate>Tue, 31 Jan 2017 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/ml-implementation/image.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>Some talk about Github</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>About Github.</p>
+<p>Let’s look at the wonderful world of git, (the Version Control System) and the popular GitHub service that makes creating, developing and sharing code fun and easy.</p>
+<p>Git is open source but GitHub is a for-profit company (and not to be confused with Git). GitHub is by far the largest code repository out there!</p>
+<p>Lets take a project folder,( this is what we refer to as repository.) and say we wanted to save it. The save we are going to do is not the normal save, but to take the snapshot of the whole repository as it is. The snapshot here is called commit. Not only can we write comments and share this among people, but we can also go back to that snapshot whenever we wish to.</p>
+<p>Imagine we are making these commits the whole time and we get some crazy idea (maybe, add some feature), we can create something called branch. A branch is essentially a new development path that we can follow as long as we like without messing up with our master development plan.</p>
+<p>Say, I have a typo in one of the commits and my buddy figures it out. He’s generous enough to make the necessary changes by making his own branch (and fix the errors himself) . After he’s all done, he can ask me to pull in his changes by using something called Pull Request. If I accept the request, that branch is merged with the master branch.</p>
+<p>GitHub is built to be the place to host the repositories. When we put our repository on GitHub, we then have a centralised place to distribute the code from .</p>
+<p>Say, I have my repo on GitHub,and I pull the code to my local machine and make a few edits, and I’ll commit my edits. Then, I push the code from the local machine to GitHub. Now that my updated code is on GitHub, its easy to invite friends to share the code or distribute something to the world!</p>
+<p>Suppose I have a repo and you are interested in the code but you want to use it for a different purpose. GitHub allows you to fork my repository and make the changes you desire and it creates an entirely new repo for you to manage on your own. Fork is a part of your github account. You can even raise a pull request from your fork. This is how large open source projects are done.</p>
+<p>Besides all this, Github also offers a free static web hosting.</p>
+
+
+
+ ]]></description>
+  <category>computer-science</category>
+  <guid>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</guid>
+  <pubDate>Sat, 28 Jan 2017 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/github/image.png" medium="image" type="image/png" height="41" width="144"/>
+</item>
+<item>
+  <title>Notes: Few concepts of machine learning</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Notes on a few ML concepts.</p>
+<p><em>Deduction</em>: Given the rule and the cause, deduce the effect.</p>
+<p><em>Induction</em>: Given a cause and an effect, induce a rule.</p>
+<p><em>Abduction</em>: Given a rule and an effect, abduce a cause.</p>
+<p><em>TAXONOMY</em></p>
+<p>What? – Parameters, structure, hidden concepts</p>
+<p>What from? – Supervised, Unsupervised, Reinforcement</p>
+<p>What for? – prediction, diagnostics, summarization</p>
+<p>How? – passive, active, online, offline</p>
+<p>Outputs? – Classification, Regression</p>
+<p>Details? – Generative, Discriminative</p>
+<p>Occom’s Razor – Everything else being equal, choose the less complex hypothesis.</p>
+<p>The Ultimate goal of Machine Learning is to have data models that can learn and improve overtime.</p>
+<p><strong>Evaluation Metrics</strong></p>
+<p>Learn from data to make predictions.</p>
+<p>Classification is about deciding which categories new instances belong to. Then when we see new objects we can use their features to guess which class they belong to.</p>
+<p>In regression, we want to make a prediction on continuous data.</p>
+<p>In classification, we want to see how often a model correctly or incorrectly identifies a new example, whereas, in regression we might be more interested to see how far off the model’s prediction is true from true value.</p>
+<p>Classification ⇒ Accuracy, precision, recall and F-score.</p>
+<p>Regression ⇒ mean absolute error and mean square error.</p>
+<p>Short comings of accuracy:</p>
+<ul>
+<li>Not ideal for skewed classes</li>
+<li>may want to err on side of guessing innocent.</li>
+<li>may want to err on the side of guessing guilty.</li>
+</ul>
+<p>Causes of Error:</p>
+<ul>
+<li><p>Bias due to a model being unable to represent the complexity of the underlying data.</p></li>
+<li><p>Variance due to a model being overly sensitive to the limited data it has been trained on.</p></li>
+<li><p>Bias occurs when a model has enough data but is not complex enough to capture the underlying relationships. As a result, the model consistently and systematically misrepresents the data, leading to low accuracy in prediction. This is known as Underfitting. To overcome error from bias, we need more complex model.</p></li>
+<li><p>Variance is a measure of how much the predictions vary for any given test sample. High sensitivity to the training set is also known as Overfitting. Occurs when the model is too complex.</p></li>
+<li><p>We can typically reduce the variability of a model’s predictions and increase precision by training on more data. If more data is unavailable, we can also control variance by limiting our model’s complexity .</p></li>
+</ul>
+<p>Data Types:</p>
+<ul>
+<li>Numeric data</li>
+<li>Categorical data</li>
+<li>Time-Series data</li>
+</ul>
+<p><strong>Curse of Dimensionality</strong></p>
+<p>As the number of features or dimensions grows, the amount of data we need to generalize accurately grows exponentially.</p>
+
+
+
+ ]]></description>
+  <category>machine-learning</category>
+  <guid>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</guid>
+  <pubDate>Fri, 20 Jan 2017 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/ml-concepts/image.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>Notes: Reinforcement Learning</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/rl/2017-01-13-reinforcement-learning.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Notes on Reinforcement learning.</p>
+<p>Reinforcement learning is the problem faced by an agent that must learn behaviour through trial-and-error interactions with a dynamic environment. It is appropriately thought of as a class of problems, rather than as a set of techniques.</p>
+<p>There are two main strategies for solving Reinforcement Learning problems. The first is to search in the space for behaviours in order to find one that performs well in the environment. This approach has been taken by work in genetic algorithms and genetic programming. The second is to use statistical techniques and dynamic programming methods to estimate the utility of taking actions in state of the world.</p>
+<p>In the standard RL model, on each step of interaction the agent receives as input i, some indication of the current state, S, of the environment. The agent chooses an action, a, to generate an output. The action changes the state of the environment and the value of this state transition is communicated to the agent through a scalar reinforcement signal, r. It should choose actions that tend to increase the long-run sum of values of the reinforcement signal. It can learn to do this overtime by systematic trial and error.</p>
+<p>An intuitive way to understand the relation between the agent and its environment is with the following example:</p>
+<p><em>Environment</em> : You are in state 65. You have 4 possible actions. <em>Agent</em>: I’ll take action 2. <em>Environment</em>: You received a reinforcement of 7 units. You are in state 15. You have 2 possible actions.</p>
+<p>The agent’s job is to find a policy Π, mapping states to actions, that maximizes some long run measure of reinforcement. We assume the environment is stationary.</p>
+<p>Important ideas in Reinforcement Learning that came up –</p>
+<ul>
+<li>Exploration – you have to try unknown actions to get information.</li>
+<li>Exploitation – eventually you have to use what you know.</li>
+<li>Regret – even if you learn intelligently you make mistakes.</li>
+<li>Sampling – because of chance you have to try things repeatedly.</li>
+<li>Difficulty – learning can be much harder than solving a known MDPs.</li>
+</ul>
+<p><strong>Markov Decision Process</strong></p>
+<ul>
+<li>A set of states s∈S</li>
+<li>A set of actions a∈A</li>
+<li>A transition function T(s,a,s’). Also called the model or the dynamics. P(s’|s,a) = T(s,a,s’)</li>
+<li>The reward function R(s,a,s’)</li>
+<li>Start state</li>
+<li>Maybe a terminal state</li>
+<li>MDP’s are non-deterministic search problems</li>
+</ul>
+<p>“Markov” generally means that given the present state, the future and the past are independent. This is just like search, where the successor function could only depend on the current state (not the history). In the deterministic single-agent search problems, we wanted an optimal plan or sequence of actions, from start to goal.</p>
+<p>For MDPs we want an optimal policy Π* : S ⇒ A</p>
+<p>A policy Π gives an action for each state. An optimal policy is one that maxmizes expected utility if followed. An explicit policy defines a reflex agent.</p>
+<p><strong>Discounting</strong></p>
+<p>Its reasonable to maximize the sum of rewards and/or to prefer rewards now to rewards later</p>
+<p>One solution: values of rewards decay exponentially.</p>
+<p>How to discount? Each time we descend a level. we multiply in the discount once.</p>
+<p>Why discount? Sooner rewards probably do have higher utility than later rewards. Also helps algorithm converge.</p>
+<p>Example: discount of 0.5 U([1,2,3]) = 1<em>1 +2</em>0.5 + 3*o.25</p>
+<p>What if the game lasts forever? Solution:</p>
+<ul>
+<li>Finite horizon: (similar to depth-limited search)</li>
+<li>Gives non stationary policies (Π depends on time left)</li>
+<li>Discounting: use 0&lt;ϒ&lt;1. Smaller ϒ means smaller “horizon”.</li>
+</ul>
+<p>Absorbing state- guarantee that for every policy, a terminal state will eventually be reached.</p>
+<p>How to solve MDPs?</p>
+<p>The value (utility) of a state S:</p>
+<p>V*(s) = expected utility starting in S and acting optimally. (tells us how good each state is)</p>
+<p>Q*(s,a) = expected utility starting out having taken action ‘a’ from state ‘s’ and (thereafter) acting optimally. (‘s’ is fixed and we vary ‘a’)</p>
+<p>The optimal policy: Π<em>(s) = optimal action from state s = argmax Q</em>(s,a) (its the action that achieves the maximum)</p>
+<p><strong>Values of States</strong></p>
+<p>Fundamental operation : compute the (expectimax) value of the state.</p>
+<ul>
+<li>Expected utility under optimal action.</li>
+<li>Average sum of (discounted) rewards</li>
+<li>This is just what expectimax computed!</li>
+</ul>
+<p>Recursive definition of value:</p>
+<p>V<em>(s) = max Q</em>(s,a)</p>
+<p>Q*(s,a) = max Σ T(s,a,s’)[R(s,a,s’) + V*(s)] — Bellman’s equation</p>
+<p><strong>Quantities</strong></p>
+<p>Policy = map of states to actions. Utility = sum of discounted rewards. Values = expected future utility from a state (max node) Q-values = expected future utility from a q-state (chance node)</p>
+<p>Both value iteration and policy iteration compute the same thing (all optimal values)</p>
+<p>In Value iteration –</p>
+<ul>
+<li>Every iteration updates both the values and (implicitly) the policy.</li>
+<li>We dont track the policy, but taking the max over actions implicitly recompute it.</li>
+</ul>
+<p>In policy iteration –</p>
+<ul>
+<li>We do several passes that update utilities with fixed policy (each pass is fast because we consider only one action and not all of them)</li>
+<li>After the policy is evaluated, a new policy is chosen (slow like a value iteration pass)</li>
+<li>The new policy will be better (or we’re done)</li>
+</ul>
+<p><strong>Unknown MDP : Model Based Learning</strong></p>
+<ul>
+<li>Learn an approximate model based on experiences.</li>
+<li>Solve for values as if the learned model were correct.</li>
+<li>E[A] = ΣP(a).a</li>
+</ul>
+<p>Unknown MDP : Model Free Learning</p>
+<p>Passive Reinforcement Learning :</p>
+<ul>
+<li>Simplified task: policy evaluation
+<ol type="1">
+<li>Input : fixed policy Π(s)</li>
+<li>You don’t know the transitions T(s,a,s’)</li>
+<li>You don’t know the rewards R(s,a,s’)</li>
+</ol></li>
+<li>Direct Evaluation: Goal : Compute values for each state under Π Idea : Average together observed sample values. Act according to Π. Everytime you visit a state, write down what the sum of discounted rewards turned out to be. Average those samples.</li>
+</ul>
+<p>What’s good about direct evaluation?</p>
+<ul>
+<li>Its easy to understand.</li>
+<li>It does’nt require any knowledge of T,R.</li>
+<li>It eventually computes the correct average values, using just sample transitions.</li>
+</ul>
+<p>What’s bad about it?</p>
+<p>It wastes information about state connnection. Each state must be learned seperately. So, it takes log time to learn.</p>
+<ul>
+<li><p>Sample based Policy Evaluation: Take samples of outcome s’(by doing action!) and average. We want to improve our estimate of V by computing these averages.</p></li>
+<li><p>Temporal Difference Learning: Big Idea: Learn from every experience! Update V(s) each time we experience a transition (s,a,s’,r) Likely outcomes s’ will contribute updates more often.</p></li>
+<li><p>Temporal difference learning of values: Policy still fixed, still doing evaluation! Move values toward value of whatever successor occurs : running avg</p></li>
+</ul>
+<p>Sample of V(s) : sample = R(s,Π(s),s’) + ϒV(s’)</p>
+<p>Update to V(s): V(s) ⇐ (1-α)V(s) + (α)sample Can also be written as : V(s) ⇐ V(s) + (α)[sample – V(s)]</p>
+<p>Problems with TD value Learning: TD value learning is a model – free way to do policy evaluation, mimicking Bellman Updates with running sample averages. Idea : Learn Q-values, not values. Makes action selection model – free too!</p>
+<p><strong>Active Reinforcement Learning</strong></p>
+<ul>
+<li>Value iteration:
+<ol type="1">
+<li>Start with Q(s,a) = 0, which we know is right.</li>
+<li>Given Qk, calculate the depth k+1</li>
+<li>Q- values for all Q-states: Qk+1 (s,a) ⇐ ∑ T(s,a,s’)[R(s,a,s’) + ϒmax Qk(s,a)]</li>
+</ol></li>
+<li>Q-learning: Learn Q(s,a) values as you go
+<ol type="1">
+<li>Receive a sample (s,a,s’,r)</li>
+<li>Consider your old estimate : Q(s,a)</li>
+<li>Consider your new sample estimate: sample = R(s,a,s’) + ϒmax Q(s’,a’)</li>
+<li>Incorporate the new estimate into a running average: Q(s,a): V(s) ⇐ (1-α)Q(s,a) + (α)[sample] Q-learning converges to optimal policy — even if you’re acting suboptimally! This is called off-policy learning.</li>
+</ol>
+Caveats:
+<ol type="1">
+<li>You have to explore enough.</li>
+<li>You have to eventually mae the learning rate small enough. 3…but not decrease it too quickly.</li>
+<li>Basically, in the limit, it doesn’t matter how you select actions!</li>
+</ol></li>
+</ul>
+<p><strong>Exploration</strong></p>
+<p>How to explore?</p>
+<p>Several schemes for forcing exploration:</p>
+<p>Simplest: random action (Ε – greedy) - Every time step, flip a coin. - With (small) probability Ε, act normally. - With (large) probability 1-Ε, act on current policy.</p>
+<p>Problems with random actions?</p>
+<ul>
+<li>You do eventually explore the space, but keep thrashing around once learning is done.</li>
+<li>One solution: lower Ε over time.</li>
+<li>Another solution : exploration functions</li>
+<li>Take a value estimate u and a, visit count n and returns an optimistic utility e.g : f(u, n) = u + k/n</li>
+</ul>
+<p><strong>Regret</strong></p>
+<ul>
+<li>Even if you learn the optimal policy, you still make mistakes along the way.
+<ul>
+<li>Regret is a measure of your total mistake cost : the difference between your (expected) rewards, including youthful suboptimality, and optimal (expected) rewards.</li>
+</ul></li>
+<li>Mimicking regret goes beyond learning t be optimal – it requires optimally learnin g to be optimal.</li>
+</ul>
+<p>Example : random exploration and exploration functions both end up optimal, but random exploration has higher regret.</p>
+<p><strong>Approximate Q- learning</strong></p>
+<p>Generalizing across states:</p>
+<ul>
+<li>Basic Q-learning keeps a table of q-values.</li>
+<li>In realistic situations, we cannot possibly learn about every single state!</li>
+<li>Too many states to visit them all in training.</li>
+<li>Too many states to hold the q-tables in memory.</li>
+</ul>
+<p>Instead, we want to generalize:</p>
+<p>Learn about some number of training states from experience. Generalize that experience to new, similar situations. This is a fundamental idea in machine learning.</p>
+<p>Solution: describe a state using a vector of features (properties)</p>
+<ul>
+<li>Features are functions from state to real numbers (often 0/1) that capture important properties of the state .</li>
+<li>Can also describe a q-state (s,a) with features.</li>
+</ul>
+<p><strong>Linear Value Functions</strong></p>
+<ul>
+<li>Using a feature representation, we can write a q-function (or value function ) for any state using a few weights – V(s) = w1f1(s) +w2f2(s)…+wnfn(s) Q(s,a) = w1f1(s,a) + w2f2(s,a)+…+wnfn(s,a)</li>
+<li>Advantage: Our experience is summed up in a few powerful numbers.</li>
+<li>Disadvantage: States may share features but actually be very different in value !</li>
+<li>Q- learning with linear Q-functions</li>
+</ul>
+<p>Intuitive interpretation:</p>
+<ul>
+<li>Adjust weights of active features.</li>
+</ul>
+<p>Example: if something unexpectedly bad happens, blame the features that were on : disprefer all states with that state’s features.</p>
+<p><strong>Policy Search</strong></p>
+<p>Problem: often the feature-based policies that work well aren’t the ones that approximate V/Q best.</p>
+<p>Solution: Learn policies that minimize rewards, not the values that predict them.</p>
+<p>Policy Search: start with an OK solution (eg: Q-learning) then fine-tune by hill climbing on feature weights.</p>
+<p>Simplest policy search :</p>
+<p>Start with an initial linear value function or Q-function. Nudge each feature weight up and down and see if your policy is better than before.</p>
+<p>Problems:</p>
+<ul>
+<li>How do we tell the policy got better?</li>
+<li>Need to run many sample episodes!</li>
+<li>If there are a lot of features, that can be impractical.</li>
+</ul>
+<p>Better methods exploit look-ahead structure, sample wisely, change multiple parameters.</p>
+
+
+
+ ]]></description>
+  <category>machine-learning</category>
+  <guid>https://akkikek.xyz/posts/rl/2017-01-13-reinforcement-learning.html</guid>
+  <pubDate>Fri, 13 Jan 2017 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/rl/image.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>Some intuition on Feature Scaling, Feature Selection and Feature Transformation</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Notes on feature engineering in Machine Learning.</p>
+<p><strong>Feature Scaling</strong></p>
+<p>Feature scaling is a method used to standardize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data pre-processing step.</p>
+<p>The simplest method is rescaling the range of features to scale the range in [0, 1] or [−1, 1]. The general formula is given as:</p>
+<p>X’ = (X – Xmin)/(Xmax – Xmin)</p>
+<p>where, X’ is the value we want to rescale, X is the given value, Xmax is the largest value of X and Xmin the smallest.</p>
+<p>Let us consider, old weights = [115,140,175] and we are going to scale for the value 140.</p>
+<p>X’ = (140 – 115)/(175 – 115) = 0.41666</p>
+<p>Therefore, the range is, [0,0.41666,1]</p>
+<p><strong>Feature Selection</strong></p>
+<p>Why do we have to perform feature selection?</p>
+<ul>
+<li>Knowledge discovery, Interpretability and to gain some insights.</li>
+<li>Curse of dimensionality.</li>
+</ul>
+<p>There are two methods of Feature Selection :</p>
+<ul>
+<li><p>Filtering – Filter type methods select variables regardless of the model. They are based only on general features like the correlation with the variable to predict. Filter methods suppress the least interesting variables. They are mainly used as a pre-process method.</p></li>
+<li><p>Set of all features –&gt; Selecting the best subset –&gt; Learning Algorithm –&gt; Performance</p></li>
+<li><p>Wrapping – Wrapper methods evaluate subsets of variables which allows, unlike filter approaches, to detect the possible interactions between variables.</p></li>
+</ul>
+<p><strong>Feature Transformation</strong></p>
+<p>Feature transformation is a group of methods that create new features (predictor variables). Feature selection is a subset of feature transformation.</p>
+<p>Consider an ‘X’ space having ‘n’ features, using feature transformation we are going to transform X to have ‘m’ features, where m &lt; n.</p>
+<p>This is done by defining some matrix Px which is a subspace to which we are going to project ‘X’ space. The new features are combination of the old features.</p>
+<p>There are many types explained below –</p>
+<p><strong>Principal Component Analysis (PCA)</strong></p>
+<p>A movie camera takes a 3-D information and flatten it to 2-D without too much loss of information.</p>
+<p>What does all of this have to do with PCA?</p>
+<p>PCA takes a dataset with a lot of dimensions and flatten it to two or three dimensions so we can look at it.</p>
+<p>It tries to find a meaningful way to flatten the data by focusing on the things that are different between cells.</p>
+<p>Here, the weights are termed Loadings. And array of loadings is called “Eigen Vector”.</p>
+<p>PCA review :</p>
+<ul>
+<li>Systematized way to transform input features into principal components (PC)</li>
+<li>Use new PCs as new features.</li>
+<li>PCs are directions in data that maximize variance when you project/compress down onto them.</li>
+<li>The more variance of data along a PC, the higher that PC is ranked.</li>
+<li>Most variance, most information would be the first PC.</li>
+<li>Second-most variance would be the second PC.</li>
+<li>Max number of PCs = number of input features.</li>
+</ul>
+<p>Typical example of PCA is in eigenfaces.</p>
+<p>PCA is a linear algebraic approach.</p>
+<p><strong>Independent Components Analysis (ICA)</strong></p>
+<p>It is a computational method for separating a multivariate signal into additive sub-components. This is done by assuming that the sub-components are non-Gaussian signals and that they are statistically independent from each other.</p>
+<p>A common example application is the “cocktail party problem” of listening in on one person’s speech in a noisy room.</p>
+<p>ICA is a probabilistic approach.</p>
+<p><strong>Random Component Analysis (RCA)</strong></p>
+<p>Uses random way to transform input features into principal components (PC)</p>
+<p><strong>Linear Discriminant Analysis (LDA)</strong></p>
+<p>Finds a projection that descriminates based on the label.</p>
+<p>Fundamental assumption is different, although they do the same thing, which is to capture the original data in some new transform space that is somehow better.</p>
+
+
+
+ ]]></description>
+  <category>machine-learning</category>
+  <guid>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</guid>
+  <pubDate>Sat, 31 Dec 2016 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/feature-engineering/image.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>Unsupervised learning: Clustering</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Notes on Unsupervised learning.</p>
+<p>Unsupervised Learning is a type of Machine Learning algorithm used to predict from dataset consisting of input data without labeled responses.</p>
+<p>Getting an algorithm to recognise clumps of data points without any help is called Clustering.</p>
+<p><strong>Types of Clustering</strong>:</p>
+<ul>
+<li>Monothetic – Cluster members have some common property.</li>
+<li>Polythetic – Cluster members are similar to each other. There isn’t a single property which makes them all similar.</li>
+<li>Hard clustering – clusters do not overlap. That is, each element belongs to a cluster or not.</li>
+<li>Soft Clustering – Clusters may overlap.</li>
+<li>Flat or Hierarchical Clustering.</li>
+</ul>
+<p>Here are a few Algorithms used are:</p>
+<p><strong>K-Means Algorithm</strong></p>
+<p>It works like this: first we choose k, the number of clusters.</p>
+<ul>
+<li><p>Assign – We then find the center of each cluster, they are called Centroids. Choosing the initial location of the centroid affects the final clustering results.</p></li>
+<li><p>Optimize – We move the cluster centers to minimize total bands’ length. The web connects the centroids to the data points in that cluster. Thereby, we minimize the total length of the web for each centroid.</p></li>
+</ul>
+<p><strong>Limitations of K-Means</strong></p>
+<ul>
+<li>k-means can only be applied when the data points lie in a Euclidean space, failing for more complex types of data.</li>
+<li>Even though we have fixed data points and clusters, we wont get the same result everytime.</li>
+<li>It is highly dependent on the initial location of the centroid, so, there are chances of us reaching the local minima. More the centroids, more the local minima there is. Hence, we are forced to run the algorithm multiple times.</li>
+</ul>
+<p><strong>Single Linkage Clustering</strong></p>
+<ul>
+<li>We consider each object as a cluster (n objects).</li>
+<li>Define inter cluster distance between the closest two points in the two clusters.</li>
+<li>Merge two closest clusters.</li>
+<li>Repeat the same, for n-k times, to make k clusters.</li>
+<li>Its just connecting the dots to the nearest ones in a linear fashion.</li>
+</ul>
+<p>Running time is O(n^3) or slightly lesser.</p>
+<p><strong>Expectation Maximization</strong></p>
+<ul>
+<li>The overview of this is similar to K-means, but here, you are going to judge by probability, and you are never assigning one data point fully to one cluster or one cluster wholly to one data point.</li>
+<li>You instead assign each point partially to each cluster based on the probability that it would belong to the cluster if you fully knew the clusters, and then assign the mean of each cluster based on the assumption that your prior probabilities were correct, and repeat until there are no significant changes.</li>
+</ul>
+<p><strong>Clustering Properties</strong></p>
+<ul>
+<li><p>Richness – For any assignment of object to clusters, there is some distance from matrix D such that Pd returns that clustering.</p></li>
+<li><p>Scale-invariance – Scaling distances by a positive value does not change the clustering.</p></li>
+<li><p>Consistency – Shrinking intra-cluster distances and expanding inter-cluster distances does not change the clustering.</p></li>
+</ul>
+<p><strong>Impossibility Theorem</strong></p>
+<p>It states that, no clustering scheme can achieve all three clustering properties.</p>
+<p>You can find further information, <a href="https://www.cs.cornell.edu/home/kleinber/nips15.pdf">here</a>.</p>
+
+
+
+ ]]></description>
+  <category>machine-learning</category>
+  <guid>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</guid>
+  <pubDate>Wed, 28 Dec 2016 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/unsupervised-learning/image.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>Linux Filesystem</title>
+  <dc:creator>Akhilesh</dc:creator>
+  <link>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Basics of linux filesystem.</p>
+<p>Linux filesystem dates back to late 1960s, the early days of Unix. Most of the folders are three to four letters long, starting with:</p>
+<section id="bin" class="level3">
+<h3 class="anchored" data-anchor-id="bin">/bin</h3>
+<p>Binary programs or executable files which are available to all users.</p>
+<p>Includes GNU basic command line utilities essential to the system, such as ls, echo, grep etc.</p>
+<p>Also includes GUI applications</p>
+</section>
+<section id="boot" class="level3">
+<h3 class="anchored" data-anchor-id="boot">/boot</h3>
+<p>Files essential to the booting of the system, such as:</p>
+<ul>
+<li>Vmlinuz - Linux Kernel</li>
+<li>System.map - Memory locations for variables or functions</li>
+<li>Initrd.img - Initial ramdisk, temporary root file system</li>
+<li>Grub</li>
+<li>EFI</li>
+</ul>
+</section>
+<section id="dev" class="level3">
+<h3 class="anchored" data-anchor-id="dev">/dev</h3>
+<p>Files for peripheral and component devices of your system:</p>
+<ul>
+<li>/dev/js0 - First analogue joystick</li>
+<li>/dev/nvme0 - First NVMe drive</li>
+<li>/dev/sda - First SATA HDD / SSD</li>
+<li>/dev/loop0 - First fake mounting point</li>
+<li>/dev/null - Black Hole</li>
+<li>/dev/random or /dev/urandom - Random number generator</li>
+<li>/dev/zero - Zero</li>
+</ul>
+</section>
+<section id="etc" class="level3">
+<h3 class="anchored" data-anchor-id="etc">/etc</h3>
+<p>Configuration files for all programs. However, user specific configs are stored in /home/user/.config</p>
+</section>
+<section id="home" class="level3">
+<h3 class="anchored" data-anchor-id="home">/home</h3>
+<p>Users Documents, Pictures, Videos, etc.</p>
+<p>User specific config settings are stored in /home/user/.config as well as other . (dot) folders.</p>
+</section>
+<section id="lib" class="level3">
+<h3 class="anchored" data-anchor-id="lib">/lib</h3>
+<p>Shared library files and kernel modules.</p>
+<p>Oftern ends with .so (Shared Object) extension.</p>
+<ul>
+<li>/lib/modules - Kernel modules</li>
+<li>/lib/x86_64 - Architecture specific</li>
+<li>/lib32 /lib64 - Architecture specific</li>
+</ul>
+</section>
+<section id="media" class="level3">
+<h3 class="anchored" data-anchor-id="media">/media</h3>
+<p>Removable media, such as CD, DVD, USB Flash drive.</p>
+</section>
+<section id="mnt" class="level3">
+<h3 class="anchored" data-anchor-id="mnt">/mnt</h3>
+<p>Fixed drives, such as SATA Hard drive or Solid State Drives.</p>
+</section>
+<section id="opt" class="level3">
+<h3 class="anchored" data-anchor-id="opt">/opt</h3>
+<p>Additional applications which are not part of the default system.</p>
+<p>This folder is an alternative to /bin, /usr/bin, /usr/local</p>
+</section>
+<section id="proc" class="level3">
+<h3 class="anchored" data-anchor-id="proc">/proc</h3>
+<p>Pseudo file system which provides an interface to kernel view of processes (e.g.&nbsp;currently running applications). Referred to by PID (Process ID).</p>
+</section>
+<section id="root" class="level3">
+<h3 class="anchored" data-anchor-id="root">/root</h3>
+<p>Root users home folder, usually empty if there is no root user on the system. This is not the same as /home/root .</p>
+</section>
+<section id="sbin" class="level3">
+<h3 class="anchored" data-anchor-id="sbin">/sbin</h3>
+<p>Binary programs or executable files which are reserved for access by Root user. Similar to /bin</p>
+<p>Includes basic command line utilities, such as: blkid, iptables, mount, useradd and visudo.</p>
+<p>Also includes some GUI applications, although not as many as /bin</p>
+</section>
+<section id="srv" class="level3">
+<h3 class="anchored" data-anchor-id="srv">/srv</h3>
+<p>Contains data which is served by the system, such as Website or FTP server.</p>
+<p>/var/www is also a location where website data is stored.</p>
+</section>
+<section id="sys" class="level3">
+<h3 class="anchored" data-anchor-id="sys">/sys</h3>
+<p>Sysfs pseudo-filesystem which provides an interface to kernel view of hardware devices.</p>
+<p>Lists more devices than /dev, such as CPU and Firmware.</p>
+</section>
+<section id="tmp" class="level3">
+<h3 class="anchored" data-anchor-id="tmp">/tmp</h3>
+<p>Temporary files which are deleted on shutdown or reboot.</p>
+</section>
+<section id="usr" class="level3">
+<h3 class="anchored" data-anchor-id="usr">/usr</h3>
+<p>Contains programs and libraries installed by the distro:</p>
+<ul>
+<li>/usr/bin - Applications which are available to all users</li>
+<li>/usr/sbin - Applications which are reserved for access by Root user</li>
+<li>/usr/games - Specific folder for games</li>
+<li>/usr/include - C Header files</li>
+<li>/usr/lib - Library files</li>
+<li>/usr/local - Folder for anything locally installed by the system administrator. (Not touched by the distro)</li>
+<li>/usr/share - Manual pages and other documents for applications</li>
+</ul>
+</section>
+<section id="var" class="level3">
+<h3 class="anchored" data-anchor-id="var">/var</h3>
+<p>Variable data files which may regularly change, such as log files and printer spool</p>
+<ul>
+<li>/var/backups - Backups of key system files</li>
+<li>/var/cache - Cached data for applications</li>
+<li>/var/crash - Crash data dumps</li>
+<li>/var/lib - Dynamic libraries listed by owner application</li>
+<li>/var/lock - Locked files</li>
+<li>/var/log - Log data</li>
+<li>/var/spool - Spool files for cron, Mail and printing</li>
+<li>/var/tmp - temporary files which need to exist for longer than /tmp allows</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>computer-science</category>
+  <category>linux</category>
+  <guid>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</guid>
+  <pubDate>Sat, 10 Dec 2016 00:00:00 GMT</pubDate>
+  <media:content url="https://akkikek.xyz/posts/linux-filesystem/image.png" medium="image" type="image/png" height="134" width="144"/>
+</item>
+</channel>
+</rss>

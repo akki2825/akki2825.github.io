@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Akhilesh">
-<meta name="dcterms.date" content="2016-12-28">
+<meta name="author" content="Harlow Malloc">
+<meta name="dcterms.date" content="2023-02-10">
 
-<title>Akhilesh - Unsupervised learning: Clustering</title>
+<title>Akhilesh - Post With Code</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,8 +85,17 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://akkikek.xyz/resume/index.pdf">
+ <span class="menu-text">Resume</span></a>
+  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -100,9 +109,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Unsupervised learning: Clustering</h1>
+      <h1 class="title">Post With Code</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">machine-learning</div>
+                <div class="quarto-category">news</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">analysis</div>
               </div>
                   </div>
   </div>
@@ -113,14 +124,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Akhilesh </p>
+               <p>Harlow Malloc </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 28, 2016</p>
+        <p class="date">February 10, 2023</p>
       </div>
     </div>
     
@@ -138,53 +149,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Notes on Unsupervised learning.</p>
-<p>Unsupervised Learning is a type of Machine Learning algorithm used to predict from dataset consisting of input data without labeled responses.</p>
-<p>Getting an algorithm to recognise clumps of data points without any help is called Clustering.</p>
-<p><strong>Types of Clustering</strong>:</p>
-<ul>
-<li>Monothetic – Cluster members have some common property.</li>
-<li>Polythetic – Cluster members are similar to each other. There isn’t a single property which makes them all similar.</li>
-<li>Hard clustering – clusters do not overlap. That is, each element belongs to a cluster or not.</li>
-<li>Soft Clustering – Clusters may overlap.</li>
-<li>Flat or Hierarchical Clustering.</li>
-</ul>
-<p>Here are a few Algorithms used are:</p>
-<p><strong>K-Means Algorithm</strong></p>
-<p>It works like this: first we choose k, the number of clusters.</p>
-<ul>
-<li><p>Assign – We then find the center of each cluster, they are called Centroids. Choosing the initial location of the centroid affects the final clustering results.</p></li>
-<li><p>Optimize – We move the cluster centers to minimize total bands’ length. The web connects the centroids to the data points in that cluster. Thereby, we minimize the total length of the web for each centroid.</p></li>
-</ul>
-<p><strong>Limitations of K-Means</strong></p>
-<ul>
-<li>k-means can only be applied when the data points lie in a Euclidean space, failing for more complex types of data.</li>
-<li>Even though we have fixed data points and clusters, we wont get the same result everytime.</li>
-<li>It is highly dependent on the initial location of the centroid, so, there are chances of us reaching the local minima. More the centroids, more the local minima there is. Hence, we are forced to run the algorithm multiple times.</li>
-</ul>
-<p><strong>Single Linkage Clustering</strong></p>
-<ul>
-<li>We consider each object as a cluster (n objects).</li>
-<li>Define inter cluster distance between the closest two points in the two clusters.</li>
-<li>Merge two closest clusters.</li>
-<li>Repeat the same, for n-k times, to make k clusters.</li>
-<li>Its just connecting the dots to the nearest ones in a linear fashion.</li>
-</ul>
-<p>Running time is O(n^3) or slightly lesser.</p>
-<p><strong>Expectation Maximization</strong></p>
-<ul>
-<li>The overview of this is similar to K-means, but here, you are going to judge by probability, and you are never assigning one data point fully to one cluster or one cluster wholly to one data point.</li>
-<li>You instead assign each point partially to each cluster based on the probability that it would belong to the cluster if you fully knew the clusters, and then assign the mean of each cluster based on the assumption that your prior probabilities were correct, and repeat until there are no significant changes.</li>
-</ul>
-<p><strong>Clustering Properties</strong></p>
-<ul>
-<li><p>Richness – For any assignment of object to clusters, there is some distance from matrix D such that Pd returns that clustering.</p></li>
-<li><p>Scale-invariance – Scaling distances by a positive value does not change the clustering.</p></li>
-<li><p>Consistency – Shrinking intra-cluster distances and expanding inter-cluster distances does not change the clustering.</p></li>
-</ul>
-<p><strong>Impossibility Theorem</strong></p>
-<p>It states that, no clustering scheme can achieve all three clustering properties.</p>
-<p>You can find further information, <a href="https://www.cs.cornell.edu/home/kleinber/nips15.pdf">here</a>.</p>
+<p>This is a post with executable code.</p>
 
 
 
