@@ -15,11 +15,11 @@ about:
       href: https://github.com/akki2825
 ---
 
-Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the department of English Language and Linguistics, Heinrich Heine University.
+Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University.
 
 I currently work on Computational Morphology – supervised by [Prof. Dr. Kevin Tang](https://kevintang.org/) and mentored by [Dr. Dinah Baer-Henney](https://blogs.phil.hhu.de/dbh13/).
 
-Research interests: Computational Linguistics, Language Revitalization and Programming languages.
+My research interests include Computational Linguistics, Language Revitalization and Programming languages.
 
 To know more about me: 
 
