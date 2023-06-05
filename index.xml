@@ -9,11 +9,11 @@
 <link>https://akkikek.xyz/index.html</link>
 <atom:link href="https://akkikek.xyz/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.2.475</generator>
+<generator>quarto-1.3.361</generator>
 <lastBuildDate>Tue, 07 Dec 2021 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Installing Aeneas on WSL and MacOS</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</link>
   <description><![CDATA[ 
 
@@ -107,7 +107,7 @@ sudo pip3 install py3-aeneas</code></pre>
 </item>
 <item>
   <title>Installing Kaldi and MFA</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/mfa/2021-11-09-mfa.html</link>
   <description><![CDATA[ 
 
@@ -148,7 +148,7 @@ make -j 4</code></pre>
 </item>
 <item>
   <title>Understanding the spread of Extinct and Endangered languages across India</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html</link>
   <description><![CDATA[ 
 
@@ -168,34 +168,182 @@ make -j 4</code></pre>
 <div class="cell" data-execution_count="1">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
-<span id="cb1-2"><span class="im" style="color: #00769E;">import</span> numpy <span class="im" style="color: #00769E;">as</span> np</span>
-<span id="cb1-3"><span class="im" style="color: #00769E;">import</span> pandas <span class="im" style="color: #00769E;">as</span> pd</span>
-<span id="cb1-4">pd.options.mode.chained_assignment <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">None</span></span>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#collapse-hide</span></span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-4">pd.options.mode.chained_assignment <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
 <span id="cb1-5"></span>
-<span id="cb1-6"><span class="im" style="color: #00769E;">from</span> IPython.display <span class="im" style="color: #00769E;">import</span> HTML</span>
-<span id="cb1-7"><span class="im" style="color: #00769E;">from</span> chart_studio <span class="im" style="color: #00769E;">import</span> plotly</span>
-<span id="cb1-8"><span class="im" style="color: #00769E;">import</span> plotly.graph_objs <span class="im" style="color: #00769E;">as</span> go</span>
-<span id="cb1-9"><span class="im" style="color: #00769E;">from</span> plotly <span class="im" style="color: #00769E;">import</span> tools</span>
-<span id="cb1-10"><span class="im" style="color: #00769E;">from</span> plotly.offline <span class="im" style="color: #00769E;">import</span> iplot, init_notebook_mode</span>
+<span id="cb1-6"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> IPython.display <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> HTML</span>
+<span id="cb1-7"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> chart_studio <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly</span>
+<span id="cb1-8"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.graph_objs <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> go</span>
+<span id="cb1-9"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> plotly <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> tools</span>
+<span id="cb1-10"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> plotly.offline <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> iplot, init_notebook_mode</span>
 <span id="cb1-11">init_notebook_mode()</span>
 <span id="cb1-12"></span>
-<span id="cb1-13">language_data <span class="op" style="color: #5E5E5E;">=</span> pd.read_csv(<span class="st" style="color: #20794D;">'data.csv'</span>, usecols<span class="op" style="color: #5E5E5E;">=</span>[<span class="dv" style="color: #AD0000;">0</span>, <span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">5</span>, <span class="dv" style="color: #AD0000;">7</span>, <span class="dv" style="color: #AD0000;">10</span>, <span class="dv" style="color: #AD0000;">12</span>, <span class="dv" style="color: #AD0000;">13</span>])</span>
-<span id="cb1-14">language_data <span class="op" style="color: #5E5E5E;">=</span> language_data.rename(</span>
-<span id="cb1-15">    columns<span class="op" style="color: #5E5E5E;">=</span>{<span class="st" style="color: #20794D;">'Name in English'</span>:<span class="st" style="color: #20794D;">'language'</span>, <span class="st" style="color: #20794D;">'Country codes alpha 3'</span>:<span class="st" style="color: #20794D;">'locations'</span>,</span>
-<span id="cb1-16">             <span class="st" style="color: #20794D;">'Degree of endangerment'</span>:<span class="st" style="color: #20794D;">'risk'</span>, <span class="st" style="color: #20794D;">'Number of speakers'</span>:<span class="st" style="color: #20794D;">'population'</span>})</span>
-<span id="cb1-17">language_data.columns <span class="op" style="color: #5E5E5E;">=</span> language_data.columns.<span class="bu" style="color: null;">str</span>.lower()</span>
-<span id="cb1-18">language_data[<span class="st" style="color: #20794D;">'risk'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_data[<span class="st" style="color: #20794D;">'risk'</span>].<span class="bu" style="color: null;">str</span>.title()</span>
-<span id="cb1-19">language_data[<span class="st" style="color: #20794D;">'population'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_data[<span class="st" style="color: #20794D;">'population'</span>].fillna(<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb1-13">language_data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_csv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'data.csv'</span>, usecols<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">13</span>])</span>
+<span id="cb1-14">language_data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_data.rename(</span>
+<span id="cb1-15">    columns<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>{<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Name in English'</span>:<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'language'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Country codes alpha 3'</span>:<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'locations'</span>,</span>
+<span id="cb1-16">             <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Degree of endangerment'</span>:<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'risk'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Number of speakers'</span>:<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>})</span>
+<span id="cb1-17">language_data.columns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_data.columns.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>.lower()</span>
+<span id="cb1-18">language_data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'risk'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'risk'</span>].<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>.title()</span>
+<span id="cb1-19">language_data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>].fillna(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
 <span id="cb1-20"></span>
-<span id="cb1-21"><span class="co" style="color: #5E5E5E;"># endangered or extinct languages in India</span></span>
-<span id="cb1-22">language_ind <span class="op" style="color: #5E5E5E;">=</span> language_data[language_data[<span class="st" style="color: #20794D;">'locations'</span>].<span class="bu" style="color: null;">str</span>.contains(<span class="st" style="color: #20794D;">'IND'</span>) <span class="op" style="color: #5E5E5E;">==</span> <span class="va" style="color: #111111;">True</span>]</span>
+<span id="cb1-21"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># endangered or extinct languages in India</span></span>
+<span id="cb1-22">language_ind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_data[language_data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'locations'</span>].<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>.contains(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'IND'</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>]</span>
 <span id="cb1-23"></span>
-<span id="cb1-24">language_ind[<span class="st" style="color: #20794D;">'risk'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_ind[<span class="st" style="color: #20794D;">'risk'</span>].replace(</span>
-<span id="cb1-25">    [<span class="st" style="color: #20794D;">'Vulnerable'</span>, <span class="st" style="color: #20794D;">'Definitely Endangered'</span>, <span class="st" style="color: #20794D;">'Severely Endangered'</span>,</span>
-<span id="cb1-26">     <span class="st" style="color: #20794D;">'Critically Endangered'</span>, <span class="st" style="color: #20794D;">'Extinct'</span>], [<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">2</span>, <span class="dv" style="color: #AD0000;">3</span>, <span class="dv" style="color: #AD0000;">4</span>, <span class="dv" style="color: #AD0000;">5</span>])</span>
+<span id="cb1-24">language_ind[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'risk'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'risk'</span>].replace(</span>
+<span id="cb1-25">    [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Vulnerable'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Definitely Endangered'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Severely Endangered'</span>,</span>
+<span id="cb1-26">     <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Critically Endangered'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Extinct'</span>], [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>])</span>
 <span id="cb1-27"></span>
-<span id="cb1-28">language_ind <span class="op" style="color: #5E5E5E;">=</span> language_ind[[<span class="st" style="color: #20794D;">'language'</span>, <span class="st" style="color: #20794D;">'risk'</span>, <span class="st" style="color: #20794D;">'population'</span>, <span class="st" style="color: #20794D;">'latitude'</span>, <span class="st" style="color: #20794D;">'longitude'</span>]]</span></code></pre></div>
+<span id="cb1-28">language_ind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'language'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'risk'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'latitude'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'longitude'</span>]]</span></code></pre></div>
 </details>
 </div>
 </section>
@@ -204,56 +352,242 @@ make -j 4</code></pre>
 <div class="cell" data-execution_count="2">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
-<span id="cb2-2">labels <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'Isolated'</span>, <span class="st" style="color: #20794D;">'Threatened'</span>, <span class="st" style="color: #20794D;">'Endangered'</span>, <span class="st" style="color: #20794D;">'Abandoned'</span>, <span class="st" style="color: #20794D;">'Extinct'</span>]</span>
-<span id="cb2-3">colors <span class="op" style="color: #5E5E5E;">=</span> [<span class="st" style="color: #20794D;">'rgb(0, 157, 220)'</span>, <span class="st" style="color: #20794D;">'rgb(128, 206, 237)'</span>, <span class="st" style="color: #20794D;">'rgb(255, 182, 128)'</span>,</span>
-<span id="cb2-4">          <span class="st" style="color: #20794D;">'rgb(255, 115, 13)'</span>, <span class="st" style="color: #20794D;">'rgb(242, 23, 13)'</span>]</span>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#collapse-hide</span></span>
+<span id="cb2-2">labels <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Isolated'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Threatened'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Endangered'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Abandoned'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Extinct'</span>]</span>
+<span id="cb2-3">colors <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(0, 157, 220)'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(128, 206, 237)'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(255, 182, 128)'</span>,</span>
+<span id="cb2-4">          <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(255, 115, 13)'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(242, 23, 13)'</span>]</span>
 <span id="cb2-5"></span>
-<span id="cb2-6">traces <span class="op" style="color: #5E5E5E;">=</span> []</span>
-<span id="cb2-7"><span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">6</span>):</span>
-<span id="cb2-8">    traces.append(<span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb2-9">        <span class="bu" style="color: null;">type</span> <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'scattergeo'</span>,</span>
-<span id="cb2-10">        lon <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'longitude'</span>],</span>
-<span id="cb2-11">        lat <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'latitude'</span>],</span>
-<span id="cb2-12">        text <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'language'</span>],</span>
-<span id="cb2-13">        mode <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'markers'</span>,</span>
-<span id="cb2-14">        name <span class="op" style="color: #5E5E5E;">=</span> labels[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
-<span id="cb2-15">        marker <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>( </span>
-<span id="cb2-16">            size <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">12</span>,</span>
-<span id="cb2-17">            opacity <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>,</span>
-<span id="cb2-18">            color <span class="op" style="color: #5E5E5E;">=</span> colors[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
-<span id="cb2-19">            line <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(color <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>, width <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb2-6">traces <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb2-7"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>):</span>
+<span id="cb2-8">    traces.append(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb2-9">        <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">type</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'scattergeo'</span>,</span>
+<span id="cb2-10">        lon <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'longitude'</span>],</span>
+<span id="cb2-11">        lat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'latitude'</span>],</span>
+<span id="cb2-12">        text <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'language'</span>],</span>
+<span id="cb2-13">        mode <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'markers'</span>,</span>
+<span id="cb2-14">        name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> labels[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>],</span>
+<span id="cb2-15">        marker <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>( </span>
+<span id="cb2-16">            size <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>,</span>
+<span id="cb2-17">            opacity <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.85</span>,</span>
+<span id="cb2-18">            color <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> colors[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>],</span>
+<span id="cb2-19">            line <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(color <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(255, 255, 255)'</span>, width <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
 <span id="cb2-20">        )</span>
 <span id="cb2-21">    ))</span>
-<span id="cb2-22"><span class="co" style="color: #5E5E5E;"># print(traces)</span></span>
-<span id="cb2-23">layout <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb2-24">         title <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'Languages by Latitude/Longitude in India (2016)&lt;br&gt;'</span></span>
-<span id="cb2-25">                 <span class="st" style="color: #20794D;">'&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;'</span>,</span>
-<span id="cb2-26">         showlegend <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
-<span id="cb2-27">         legend <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb2-28">             x <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>, y <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.4</span></span>
+<span id="cb2-22"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># print(traces)</span></span>
+<span id="cb2-23">layout <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb2-24">         title <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Languages by Latitude/Longitude in India (2016)&lt;br&gt;'</span></span>
+<span id="cb2-25">                 <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;'</span>,</span>
+<span id="cb2-26">         showlegend <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb2-27">         legend <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb2-28">             x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.85</span>, y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.4</span></span>
 <span id="cb2-29">         ),</span>
-<span id="cb2-30">        geo <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb2-31">                 scope <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'asia'</span>,</span>
-<span id="cb2-32">                 showland <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
-<span id="cb2-33">                 landcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(250, 250, 250)'</span>,</span>
-<span id="cb2-34">                 subunitwidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
-<span id="cb2-35">                 subunitcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
-<span id="cb2-36">                 countrywidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
-<span id="cb2-37">                 countrycolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
-<span id="cb2-38">                 showlakes <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
-<span id="cb2-39">                 lakecolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>)</span>
+<span id="cb2-30">        geo <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb2-31">                 scope <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'asia'</span>,</span>
+<span id="cb2-32">                 showland <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb2-33">                 landcolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(250, 250, 250)'</span>,</span>
+<span id="cb2-34">                 subunitwidth <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb2-35">                 subunitcolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb2-36">                 countrywidth <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb2-37">                 countrycolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb2-38">                 showlakes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb2-39">                 lakecolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(255, 255, 255)'</span>)</span>
 <span id="cb2-40">        )</span>
 <span id="cb2-41"></span>
 <span id="cb2-42"></span>
-<span id="cb2-43">figure <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(data <span class="op" style="color: #5E5E5E;">=</span> traces, layout <span class="op" style="color: #5E5E5E;">=</span> layout)</span></code></pre></div>
+<span id="cb2-43">figure <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> traces, layout <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> layout)</span></code></pre></div>
 </details>
 </div>
 <div class="cell" data-execution_count="3">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
-<span id="cb3-2"><span class="im" style="color: #00769E;">import</span> plotly.io <span class="im" style="color: #00769E;">as</span> pio</span>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#collapse-hide</span></span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pio</span>
 <span id="cb3-3"></span>
 <span id="cb3-4">pio.show(figure)</span></code></pre></div>
 </details>
@@ -292,56 +626,262 @@ if (outputEl) {{
 <div class="cell" data-execution_count="4">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
-<span id="cb4-2">language_ind <span class="op" style="color: #5E5E5E;">=</span> language_ind.sort_values(<span class="st" style="color: #20794D;">'population'</span>, ascending <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">False</span>)</span>
-<span id="cb4-3">language_ind[<span class="st" style="color: #20794D;">'text'</span>] <span class="op" style="color: #5E5E5E;">=</span> language_ind[<span class="st" style="color: #20794D;">'language'</span>] <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">'&lt;br&gt;'</span> <span class="op" style="color: #5E5E5E;">+</span> <span class="st" style="color: #20794D;">'Population '</span> <span class="op" style="color: #5E5E5E;">+</span> language_ind[</span>
-<span id="cb4-4">                                                                 <span class="st" style="color: #20794D;">'population'</span>].astype(<span class="bu" style="color: null;">str</span>)</span>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#collapse-hide</span></span>
+<span id="cb4-2">language_ind <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind.sort_values(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>, ascending <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>)</span>
+<span id="cb4-3">language_ind[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'language'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'&lt;br&gt;'</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Population '</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> language_ind[</span>
+<span id="cb4-4">                                                                 <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>].astype(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>)</span>
 <span id="cb4-5"></span>
-<span id="cb4-6">new_traces <span class="op" style="color: #5E5E5E;">=</span> []</span>
-<span id="cb4-7"><span class="cf" style="color: #003B4F;">for</span> i <span class="kw" style="color: #003B4F;">in</span> <span class="bu" style="color: null;">range</span>(<span class="dv" style="color: #AD0000;">1</span>, <span class="dv" style="color: #AD0000;">6</span>):</span>
-<span id="cb4-8">    new_traces.append(<span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb4-9">        <span class="bu" style="color: null;">type</span> <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'scattergeo'</span>,</span>
-<span id="cb4-10">        lon <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'longitude'</span>],</span>
-<span id="cb4-11">        lat <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'latitude'</span>],</span>
-<span id="cb4-12">        text <span class="op" style="color: #5E5E5E;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'text'</span>],</span>
-<span id="cb4-13">        mode <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'markers'</span>,</span>
-<span id="cb4-14">        name <span class="op" style="color: #5E5E5E;">=</span> labels[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
-<span id="cb4-15">        hoverinfo <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'text+name'</span>,</span>
-<span id="cb4-16">        marker <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>( </span>
-<span id="cb4-17">            size <span class="op" style="color: #5E5E5E;">=</span> (language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;">==</span> i][<span class="st" style="color: #20794D;">'population'</span>] <span class="op" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span>) <span class="op" style="color: #5E5E5E;">**</span> <span class="fl" style="color: #AD0000;">0.18</span> <span class="op" style="color: #5E5E5E;">*</span> <span class="dv" style="color: #AD0000;">6</span>,</span>
-<span id="cb4-18">            opacity <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>,</span>
-<span id="cb4-19">            color <span class="op" style="color: #5E5E5E;">=</span> colors[i<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span>],</span>
-<span id="cb4-20">            line <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(color <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>, width <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>)</span>
+<span id="cb4-6">new_traces <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb4-7"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>):</span>
+<span id="cb4-8">    new_traces.append(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb4-9">        <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">type</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'scattergeo'</span>,</span>
+<span id="cb4-10">        lon <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'longitude'</span>],</span>
+<span id="cb4-11">        lat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'latitude'</span>],</span>
+<span id="cb4-12">        text <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text'</span>],</span>
+<span id="cb4-13">        mode <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'markers'</span>,</span>
+<span id="cb4-14">        name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> labels[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>],</span>
+<span id="cb4-15">        hoverinfo <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text+name'</span>,</span>
+<span id="cb4-16">        marker <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>( </span>
+<span id="cb4-17">            size <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (language_ind[language_ind.risk <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i][<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'population'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.18</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>,</span>
+<span id="cb4-18">            opacity <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.85</span>,</span>
+<span id="cb4-19">            color <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> colors[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>],</span>
+<span id="cb4-20">            line <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(color <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(255, 255, 255)'</span>, width <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
 <span id="cb4-21">        )</span>
 <span id="cb4-22">    ))</span>
 <span id="cb4-23"></span>
-<span id="cb4-24">new_layout <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb4-25">         title <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'Languages by Population in India (2016)&lt;br&gt;'</span></span>
-<span id="cb4-26">                 <span class="st" style="color: #20794D;">'&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;'</span>,</span>
-<span id="cb4-27">         showlegend <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
-<span id="cb4-28">         legend <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb4-29">             x <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.85</span>, y <span class="op" style="color: #5E5E5E;">=</span> <span class="fl" style="color: #AD0000;">0.4</span></span>
+<span id="cb4-24">new_layout <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb4-25">         title <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Languages by Population in India (2016)&lt;br&gt;'</span></span>
+<span id="cb4-26">                 <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;'</span>,</span>
+<span id="cb4-27">         showlegend <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb4-28">         legend <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb4-29">             x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.85</span>, y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.4</span></span>
 <span id="cb4-30">         ),</span>
-<span id="cb4-31">         geo <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(</span>
-<span id="cb4-32">             scope <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'asia'</span>,</span>
-<span id="cb4-33">             showland <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
-<span id="cb4-34">             landcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(250, 250, 250)'</span>,</span>
-<span id="cb4-35">             subunitwidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
-<span id="cb4-36">             subunitcolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
-<span id="cb4-37">             countrywidth <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">1</span>,</span>
-<span id="cb4-38">             countrycolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(217, 217, 217)'</span>,</span>
-<span id="cb4-39">             showlakes <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">True</span>,</span>
-<span id="cb4-40">             lakecolor <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">'rgb(255, 255, 255)'</span>)</span>
+<span id="cb4-31">         geo <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(</span>
+<span id="cb4-32">             scope <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'asia'</span>,</span>
+<span id="cb4-33">             showland <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb4-34">             landcolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(250, 250, 250)'</span>,</span>
+<span id="cb4-35">             subunitwidth <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb4-36">             subunitcolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb4-37">             countrywidth <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb4-38">             countrycolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(217, 217, 217)'</span>,</span>
+<span id="cb4-39">             showlakes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>,</span>
+<span id="cb4-40">             lakecolor <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'rgb(255, 255, 255)'</span>)</span>
 <span id="cb4-41">        )</span>
 <span id="cb4-42"></span>
-<span id="cb4-43">new_figure <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">dict</span>(data <span class="op" style="color: #5E5E5E;">=</span> new_traces, layout <span class="op" style="color: #5E5E5E;">=</span> new_layout)</span></code></pre></div>
+<span id="cb4-43">new_figure <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> new_traces, layout <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> new_layout)</span></code></pre></div>
 </details>
 </div>
 <div class="cell" data-execution_count="5">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;">#collapse-hide</span></span>
-<span id="cb5-2"><span class="im" style="color: #00769E;">import</span> plotly.io <span class="im" style="color: #00769E;">as</span> pio</span>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#collapse-hide</span></span>
+<span id="cb5-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> plotly.io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pio</span>
 <span id="cb5-3"></span>
 <span id="cb5-4">pio.show(new_figure)</span></code></pre></div>
 </details>
@@ -387,7 +927,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>U.S Government’s take on FOSS (Free and Open Source Software)</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</link>
   <description><![CDATA[ 
 
@@ -420,7 +960,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>Softwares I use</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</link>
   <description><![CDATA[ 
 
@@ -498,7 +1038,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>Artificial Neuron</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</link>
   <description><![CDATA[ 
 
@@ -555,7 +1095,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>ML implementation</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/ml-implementation/2017-01-31-ml-implementation.html</link>
   <description><![CDATA[ 
 
@@ -590,7 +1130,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>Some talk about Github</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</link>
   <description><![CDATA[ 
 
@@ -618,7 +1158,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>Notes: Few concepts of machine learning</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</link>
   <description><![CDATA[ 
 
@@ -678,7 +1218,7 @@ if (outputEl) {{
 </item>
 <item>
   <title>Notes: Reinforcement Learning</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/rl/2017-01-13-reinforcement-learning.html</link>
   <description><![CDATA[ 
 
@@ -881,7 +1421,7 @@ Caveats:
 </item>
 <item>
   <title>Some intuition on Feature Scaling, Feature Selection and Feature Transformation</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</link>
   <description><![CDATA[ 
 
@@ -952,7 +1492,7 @@ Caveats:
 </item>
 <item>
   <title>Unsupervised learning: Clustering</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</link>
   <description><![CDATA[ 
 
@@ -1017,7 +1557,7 @@ Caveats:
 </item>
 <item>
   <title>Linux Filesystem</title>
-  <dc:creator>Akhilesh</dc:creator>
+  <dc:creator>Akhilesh </dc:creator>
   <link>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</link>
   <description><![CDATA[ 
 
