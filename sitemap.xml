@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://akkikek.xyz/posts/rl/2017-01-13-reinforcement-learning.html</loc>
-    <lastmod>2023-06-05T14:24:54.886Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</loc>
-    <lastmod>2023-06-05T14:24:55.578Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</loc>
-    <lastmod>2023-06-05T14:24:56.014Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</loc>
-    <lastmod>2023-06-05T14:24:56.378Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</loc>
-    <lastmod>2023-06-05T14:24:56.682Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</loc>
-    <lastmod>2023-06-05T14:24:57.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</loc>
-    <lastmod>2023-06-05T14:24:57.370Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html</loc>
-    <lastmod>2023-06-05T14:24:59.382Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</loc>
-    <lastmod>2023-06-05T14:24:59.826Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</loc>
-    <lastmod>2023-06-05T14:25:00.206Z</lastmod>
+    <loc>https://akkikek.xyz/about.html</loc>
+    <lastmod>2023-07-18T12:30:20.035Z</lastmod>
   </url>
   <url>
     <loc>https://akkikek.xyz/posts/mfa/2021-11-09-mfa.html</loc>
-    <lastmod>2023-06-05T14:25:00.526Z</lastmod>
+    <lastmod>2023-07-18T12:30:18.267Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</loc>
+    <lastmod>2023-07-18T12:30:17.299Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</loc>
+    <lastmod>2023-07-18T12:30:16.239Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</loc>
+    <lastmod>2023-07-18T12:30:15.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/rl/2017-01-13-reinforcement-learning.html</loc>
+    <lastmod>2023-07-18T12:30:14.363Z</lastmod>
   </url>
   <url>
     <loc>https://akkikek.xyz/posts/ml-implementation/2017-01-31-ml-implementation.html</loc>
-    <lastmod>2023-06-05T14:25:00.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</loc>
-    <lastmod>2023-06-05T14:25:01.354Z</lastmod>
+    <lastmod>2023-07-18T12:30:12.699Z</lastmod>
   </url>
   <url>
     <loc>https://akkikek.xyz/index.html</loc>
-    <lastmod>2023-06-05T14:25:02.498Z</lastmod>
+    <lastmod>2023-07-18T12:30:11.311Z</lastmod>
   </url>
   <url>
-    <loc>https://akkikek.xyz/about.html</loc>
-    <lastmod>2023-06-05T14:25:02.790Z</lastmod>
+    <loc>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</loc>
+    <lastmod>2023-07-18T12:30:12.199Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</loc>
+    <lastmod>2023-07-18T12:30:13.259Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</loc>
+    <lastmod>2023-07-18T12:30:14.827Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</loc>
+    <lastmod>2023-07-18T12:30:15.803Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</loc>
+    <lastmod>2023-07-18T12:30:16.827Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</loc>
+    <lastmod>2023-07-18T12:30:17.871Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html</loc>
+    <lastmod>2023-07-18T12:30:19.607Z</lastmod>
   </url>
 </urlset>
