@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://akkikek.xyz/about.html</loc>
-    <lastmod>2023-07-18T13:48:53.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/mfa/2021-11-09-mfa.html</loc>
-    <lastmod>2023-07-18T13:48:52.276Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</loc>
-    <lastmod>2023-07-18T13:48:51.604Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</loc>
-    <lastmod>2023-07-18T13:48:50.884Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</loc>
-    <lastmod>2023-07-18T13:48:50.240Z</lastmod>
+    <lastmod>2023-08-24T14:35:28.120Z</lastmod>
   </url>
   <url>
     <loc>https://akkikek.xyz/posts/rl/2017-01-13-reinforcement-learning.html</loc>
-    <lastmod>2023-07-18T13:48:49.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/ml-implementation/2017-01-31-ml-implementation.html</loc>
-    <lastmod>2023-07-18T13:48:48.476Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/index.html</loc>
-    <lastmod>2023-07-18T13:48:47.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</loc>
-    <lastmod>2023-07-18T13:48:48.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</loc>
-    <lastmod>2023-07-18T13:48:48.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</loc>
-    <lastmod>2023-07-18T13:48:49.936Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</loc>
-    <lastmod>2023-07-18T13:48:50.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</loc>
-    <lastmod>2023-07-18T13:48:51.292Z</lastmod>
-  </url>
-  <url>
-    <loc>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</loc>
-    <lastmod>2023-07-18T13:48:52.000Z</lastmod>
+    <lastmod>2023-08-24T14:35:27.380Z</lastmod>
   </url>
   <url>
     <loc>https://akkikek.xyz/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html</loc>
-    <lastmod>2023-07-18T13:48:53.288Z</lastmod>
+    <lastmod>2023-08-24T14:35:26.084Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html</loc>
+    <lastmod>2023-08-24T14:35:24.407Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/linux-filesystem/2016-12-10-linux-file-system.html</loc>
+    <lastmod>2023-08-24T14:35:23.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/ml-implementation/2017-01-31-ml-implementation.html</loc>
+    <lastmod>2023-08-24T14:35:22.599Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html</loc>
+    <lastmod>2023-08-24T14:35:21.767Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/index.html</loc>
+    <lastmod>2023-08-24T14:35:20.487Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/feature-engineering/2016-12-31-feature-engineering.html</loc>
+    <lastmod>2023-08-24T14:35:21.371Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/softwares/2020-05-21-softwares-i-use.html</loc>
+    <lastmod>2023-08-24T14:35:22.135Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/mfa/2021-11-09-mfa.html</loc>
+    <lastmod>2023-08-24T14:35:22.963Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/aeneas/2021-12-07-install-aeneas.html</loc>
+    <lastmod>2023-08-24T14:35:23.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/ml-concepts/2017-01-20-ml-concepts.html</loc>
+    <lastmod>2023-08-24T14:35:24.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/github/2017-01-28-talk-about-github.html</loc>
+    <lastmod>2023-08-24T14:35:26.508Z</lastmod>
+  </url>
+  <url>
+    <loc>https://akkikek.xyz/posts/artificial-neuron/2017-02-08-artificial-neuron.html</loc>
+    <lastmod>2023-08-24T14:35:27.780Z</lastmod>
   </url>
 </urlset>
