@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Akhilesh Kakolu Ramarao"
 image: profile.jpg
 about:
-  template: solana
+  template: trestles
   links:
     - icon: twitter
       text: Twitter
