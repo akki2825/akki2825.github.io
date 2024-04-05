@@ -2,105 +2,105 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "",
     "text": "Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University.\nI currently work on Computational Morphology – supervised by Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney."
   },
   {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Research Interests",
     "text": "Research Interests\n\nComputational Morphology\nLow-resource NLP"
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Skills",
     "text": "Skills\n\nRecent experience: Python, Bash, LaTeX, Scheme, Julia\nPast experience: Haskell, Dart, JavaScript (AngularJS)\nFrameworks: PyTorch, Flutter\nPlatforms: Arch linux, Ubuntu"
   },
   {
     "objectID": "about.html#academic-positions",
     "href": "about.html#academic-positions",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Academic Positions",
     "text": "Academic Positions\n\nHeinrich-Heine-Universität Düsseldorf, Germany\n2021-present\nPosition: Wissenschaftlicher Mitarbeiter, Department of English Language and Linguistics\n\nConducting research in computational morphology under the supervision of Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney\nTeaching computational linguistics courses for BA and MA students\nResponsible for IT administration for Slamlab"
   },
   {
     "objectID": "about.html#industry-experience",
     "href": "about.html#industry-experience",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Industry Experience",
     "text": "Industry Experience\n\nCivicDataLab\n2019-2020\nPosition: NLP Researcher\n\nDeveloped Language Platform for Assamese, including Optical Character Recognition, Machine Translation system, keyboard, rich text editor, and parallel corpora creation\nConducted case studies on language complexity of Union Budget Speeches and topic modeling on Union Budget suggestions\nBuilt crowd-sourced translation platform for COVID-19 information dissemination in local languages\nInvolved in developing a text annotation platform for sequence labeling of entities and relations in Indian court judgments\n\n\n\nSkit.ai (previously, Vernacular.ai)\n2017-2019\nPosition: Software Engineer\n\nInvolved in building multilingual chatbots and voice assistants.\nImplemented conversation design framework, dialog management system, and user response prediction strategies\n\n\n\nRamco Systems\n2016-2017\nPosition: Software Engineer\n\nDeveloped a chatbot for Human Resource (HR) system, responsible for bug fixes, documentation, and feature implementation of machine learning components"
   },
   {
     "objectID": "about.html#volunteering",
     "href": "about.html#volunteering",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Volunteering",
     "text": "Volunteering\n\nIdu Mishmi Cultural and Literary Society (IMCLS)\n2020-present\nRole: Chief Coordinator\n\nManaging partnerships and technology\nDeveloped an android E-Dictionary application for the Idu Mishmi language\n\n\n\nLohit Youth Library Network\n2020-present\nRole: Volunteer"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Education",
     "text": "Education\n\nDayanand Sagar College of Engineering\n2012-2016\nBachelor of Automobile Engineering"
   },
   {
     "objectID": "about.html#teaching",
     "href": "about.html#teaching",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Teaching",
     "text": "Teaching\n\nLearning Inflection, Summer, 2024\nAccent unplugged: Evaluating Voice assistants, Winter, 2023\nSynthesizing speech, Summer, 2023\nLanguage technology for Linguists with Internet of Things (IoT), Winter, 2022\nLaTeX for Linguists, Winter, 2022\nTowards a career in language technology: linguistic annotation, Summer, 2022\nBasic Skills in Digital Humanities, Winter, 2021"
   },
   {
     "objectID": "about.html#publications",
     "href": "about.html#publications",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Publications",
     "text": "Publications\n\nJeong, C., Schmitz, D., Kakolu Ramarao, A., Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology (pp. 138-150). Association for Computational Linguistics. https://aclanthology.org/2023.sigmorphon-1.16.pdf\nKakolu Ramarao, A., Zinova, Y., Tang, K., & van de Vijver, R. (2022). HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories. In Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology (pp. 236-239). Association for Computational Linguistics. https:// aclanthology.org/2022.sigmorphon-1.24"
   },
   {
     "objectID": "about.html#talks",
     "href": "about.html#talks",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Talks",
     "text": "Talks\n\n“From Zero to Terminal Hero” at 32nd TaCoS conference, 2023\n“Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish” at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023\n“Modeling irregular morphological patterns using Transformers” at HeiCAD Lightning Talks, 2022\n“Language Revitalization: A case for Idu Mishmi” at Microsoft Research India, 2021.\n“Language Revitalization” at Navana Tech, 2021"
   },
   {
     "objectID": "about.html#poster-presentations",
     "href": "about.html#poster-presentations",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Poster Presentations",
     "text": "Poster Presentations\n\nMuschalik, J., Schmitz, D., Kakolu Ramarao, A., & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same… but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.\nTang, K., Kakolu Ramarao, A., & Baer-Henney, D. (2022). Modeling irregular morphological patterns with recurrent neural network: the case of the L-shaped morphome. 13th Mediterranean Morphology Meeting, University of the Aegean, Greece.\nKakolu Ramarao, A. (2020). Analysis of POCSO cases in Uttar Pradesh. Agami, India, Bengaluru."
   },
   {
     "objectID": "about.html#grantsawards",
     "href": "about.html#grantsawards",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Grants/Awards",
     "text": "Grants/Awards\n\nFirst prize at the HHU Legal Hackathon 2022. Team: Akhilesh Kakolu Ramarao, Phaedon Paschalis and Diana Schill.\nFirst prize at the HeiCAD Lightning Talks 2022.\nHardware Grant. 20 × NVIDIA® JetsonTM Nano Developer Kits. NVIDIA Academic Hardware Grant, “FOSStering Digital Humanities through Accent Diversity & Conversational Devices”. Co-applicant: Kevin Tang\nEducation Grant. €9,424. e-Learning support fund, Heinrich-HeineUniversity Düsseldorf. “Interactive web-based review units for phonetics and phonology”. Co-applicant: Christopher Geissler and Kevin Tang"
   },
   {
     "objectID": "about.html#conferenceworkshop-organization",
     "href": "about.html#conferenceworkshop-organization",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Conference/Workshop Organization",
     "text": "Conference/Workshop Organization\n\nChief Organizer, LibreSlam - Free and Open Source (FOSS) for everybody, Heinrich-Heine-University, Germany, 2022\nChief Organizer and Teaching Member, LY-CS101 2020, National College, Bengaluru, India."
   },
   {
     "objectID": "about.html#consulting",
     "href": "about.html#consulting",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Consulting",
     "text": "Consulting\n\nXRI Institute\n2020-2021\n\n\nVrook\n2020-2021"
   },
   {
     "objectID": "about.html#internships",
     "href": "about.html#internships",
-    "title": "About",
+    "title": "Akhilesh Kakolu Ramarao",
     "section": "Internships",
     "text": "Internships\n\nSense Infinity Technologies\nPosition: Full-stack developer\n\n\nMaruti Suzuki\nPosition:: Industry trainee"
   },
