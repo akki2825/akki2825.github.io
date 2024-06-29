@@ -119,6 +119,8 @@ Bachelor of Automobile Engineering
 
 ## Poster Presentations
 
+- **Ramarao, A. K.**, & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024.
+
 - Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same... but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.
 
 - Tang, K., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2022). Modeling irregular morphological patterns with recurrent neural network: the case of the L-shaped morphome. 13th Mediterranean Morphology Meeting, University of the Aegean, Greece.
