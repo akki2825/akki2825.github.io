@@ -111,6 +111,10 @@ Bachelor of Automobile Engineering
 
 ## Talks
 
+### Peer-reviewed Talks
+
+- "Acoustic Analysis of Vowels in Idu Mishmi" at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. [Abstract](https://event.iitg.ac.in/hls27/Documents/HLS27_Abstract_book.pdf#page=159)
+
 - "From Zero to Terminal Hero" at the 32nd  Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. [PDF](https://tacosconference.github.io/css/2024_style/TalkSlides/RAMARAO.pdf)
 
 - "Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish" at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023
