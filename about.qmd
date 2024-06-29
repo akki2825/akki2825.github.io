@@ -111,15 +111,21 @@ Bachelor of Automobile Engineering
 
 ## Talks
 
-- "From Zero to Terminal Hero" at 32nd [TaCoS conference](https://tacosconference.github.io/agenda), 2023
+-
+- "From Zero to Terminal Hero" at the 32nd  Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. [PDF](https://tacosconference.github.io/css/2024_style/TalkSlides/RAMARAO.pdf)
+
 - "Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish" at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023
+
 - "Modeling irregular morphological patterns using Transformers" at HeiCAD Lightning Talks, 2022
-- "Language Revitalization: A case for Idu Mishmi" at Microsoft Research India, 2021.
-- "Language Revitalization" at Navana Tech, 2021
+
+### Invited Talks
+
+- **Language Revitalization: A case of Idu Mishmi** at Microsoft Research India, 2021
+- **Language Revitalization** at Navana Tech, 2021
 
 ## Poster Presentations
 
-- **Ramarao, A. K.**, & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024.
+- **Ramarao, A. K.**, & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024. [PDF](https://akkikek.xyz/presentations/labphon19_poster.pdf)
 
 - Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same... but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.
 
@@ -128,6 +134,7 @@ Bachelor of Automobile Engineering
 - **Kakolu Ramarao, A.** (2020). Analysis of POCSO cases in Uttar Pradesh. Agami, India, Bengaluru.
 
 ## Grants/Awards
+
 - First prize at the [HHU Legal Hackathon 2022](https://www.heicad.hhu.de/aktivitaeten/hhu-legal-hackathon-2022). Team: **Akhilesh Kakolu Ramarao**, Phaedon Paschalis and Diana Schill.
 - First prize at the [HeiCAD Lightning Talks 2022](https://www.heicad.hhu.de/aktivitaeten/lightning-talks-2022).
 - Hardware Grant. 20 × NVIDIA® JetsonTM Nano Developer Kits. NVIDIA Academic Hardware Grant, "FOSStering Digital Humanities through Accent Diversity & Conversational Devices". Co-applicant: Kevin Tang
