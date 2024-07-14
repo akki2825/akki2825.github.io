@@ -19,6 +19,10 @@ Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Research
 
 I currently work on Computational Morphology – supervised by [Prof. Dr. Kevin Tang](https://kevintang.org/) and [Dr. Dinah Baer-Henney](https://blogs.phil.hhu.de/dbh13/).
 
+In my previous life, I have worked on building multilingual chatbots and voice assistants at [Skit.ai](https://skit.ai/), as an NLP Researcher at [CivicDataLab](https://civicdatalab.in/) and as a Software Engineer at [Ramco Systems](https://ramco.com).
+
+I am actively engaged in language revitalization efforts for indigenous communities in Arunachal Pradesh, India, with a focus on Idu Mishmi and K'man Mishmi languages.
+
 ## Research Interests
 
 - Computational Morphology
@@ -41,8 +45,71 @@ I currently work on Computational Morphology – supervised by [Prof. Dr. Kevin 
 **Position:** Wissenschaftlicher Mitarbeiter, Department of English Language and Linguistics
 
 - Conducting research in computational morphology under the supervision of Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney
-- Teaching computational linguistics courses for BA and MA students
+- Teaching computational linguistics courses for BA and MA students. [Course list](#teaching)
 - Responsible for IT administration for [Slamlab](https://slam.phil.hhu.de/)
+
+## Teaching
+- [Learning Inflection](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=252526&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2024
+- [Accent unplugged: Evaluating Voice assistants](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=244439&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2023
+- [Synthesizing speech](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=240679&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2023
+- [Language technology for Linguists with Internet of Things (IoT)](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=231180&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2022
+- [LaTeX for Linguists](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=235036&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2022
+- [Towards a career in language technology: linguistic annotation](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=227683&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2022
+- [Basic Skills in Digital Humanities](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=220184&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&noDBAction=y&init=y), Winter, 2021
+
+## Publications
+
+- Jeong, C., Schmitz, D., **Kakolu Ramarao, A.**, Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In *Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 138-150). Association for Computational Linguistics. [https:// aclanthology.org/2023.sigmorphon-1.16.pdf](https://aclanthology.org/2023.sigmorphon-1.16.pdf)
+
+- **Kakolu Ramarao, A.**, Zinova, Y., Tang, K., & van de Vijver, R. (2022). HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories. In *Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 236-239). Association for Computational Linguistics. [https:// aclanthology.org/2022.sigmorphon-1.24](https:// aclanthology.org/2022.sigmorphon-1.24)
+
+## Talks
+
+### Peer-reviewed Talks
+
+- "Acoustic Analysis of Vowels in Idu Mishmi" at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. [Abstract](https://event.iitg.ac.in/hls27/Documents/HLS27_Abstract_book.pdf#page=159). Presenter: Pamir Gogoi. Team: Pamir Gogoi, **Akhilesh Kakolu Ramarao** and Ria Borah Sonowal.
+
+- "From Zero to Terminal Hero" at the 32nd  Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. [PDF](https://tacosconference.github.io/css/2024_style/TalkSlides/RAMARAO.pdf)
+
+- "Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish" at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023
+
+- "Modeling irregular morphological patterns using Transformers" at HeiCAD Lightning Talks, 2022
+
+### Invited Talks
+
+- **Language Revitalization: A case of Idu Mishmi** at Microsoft Research India, 2021
+- **Language Revitalization** at Navana Tech, 2021
+
+## Poster Presentations
+
+### Peer-reviewed Posters
+
+- **Ramarao, A. K.**, & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024. [PDF](https://akkikek.xyz/presentations/labphon19_poster.pdf)
+
+- Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same... but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.
+
+- Tang, K., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2022). Modeling irregular morphological patterns with recurrent neural network: the case of the L-shaped morphome. 13th Mediterranean Morphology Meeting, University of the Aegean, Greece.
+
+### Invited Posters
+
+- **Kakolu Ramarao, A.** (2020). Analysis of POCSO cases in Uttar Pradesh. Agami, India, Bengaluru.
+
+## Demos
+
+- Role of linguistics in AI for social good. In [Nacht der Wissenschaft](https://www.nachtderwissenschaft-duesseldorf.de/en/programm-2022/kuenstliche-intelligenz-in-der-politik-fluch-oder-segen-1/). Shadowplatz, Düsseldorf, Germany, 2022
+
+## Grants/Awards
+
+- First prize at the [HHU Legal Hackathon 2022](https://www.heicad.hhu.de/aktivitaeten/hhu-legal-hackathon-2022). Team: **Akhilesh Kakolu Ramarao**, Phaedon Paschalis and Diana Schill.
+- First prize at the [HeiCAD Lightning Talks 2022](https://www.heicad.hhu.de/aktivitaeten/lightning-talks-2022).
+- Hardware Grant. 20 × NVIDIA® JetsonTM Nano Developer Kits. NVIDIA Academic Hardware Grant, "FOSStering Digital Humanities through Accent Diversity & Conversational Devices". Co-applicant: Kevin Tang
+- Education Grant. €9,424. e-Learning support fund, Heinrich-HeineUniversity Düsseldorf. "Interactive web-based review units for phonetics and phonology". Co-applicant: Christopher Geissler and Kevin Tang
+
+## Conference/Workshop Organization
+
+- Translation Workshop: English to K'man Mishmi, 2023, Bamboosa Library, Tezu, Arunachal Pradesh, India
+- Chief Organizer, [LibreSlam - Free and Open Source (FOSS) for everybody](https://slam.phil.hhu.de/libreslam/), Heinrich-Heine-University, Germany, 2022
+- Chief Organizer and Teaching Member, LY-CS101 2020, National College, Bengaluru, India.
 
 ## Industry Experience
 
@@ -94,73 +161,19 @@ I currently work on Computational Morphology – supervised by [Prof. Dr. Kevin 
 
 Bachelor of Automobile Engineering
 
-## Teaching
-- [Learning Inflection](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=252526&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2024
-- [Accent unplugged: Evaluating Voice assistants](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=244439&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2023
-- [Synthesizing speech](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=240679&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2023
-- [Language technology for Linguists with Internet of Things (IoT)](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=231180&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2022
-- [LaTeX for Linguists](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=235036&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2022
-- [Towards a career in language technology: linguistic annotation](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=227683&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2022
-- [Basic Skills in Digital Humanities](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=220184&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&noDBAction=y&init=y), Winter, 2021
-
-## Publications
-
-- Jeong, C., Schmitz, D., **Kakolu Ramarao, A.**, Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In *Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 138-150). Association for Computational Linguistics. [https:// aclanthology.org/2023.sigmorphon-1.16.pdf](https://aclanthology.org/2023.sigmorphon-1.16.pdf)
-
-- **Kakolu Ramarao, A.**, Zinova, Y., Tang, K., & van de Vijver, R. (2022). HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories. In *Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 236-239). Association for Computational Linguistics. [https:// aclanthology.org/2022.sigmorphon-1.24](https:// aclanthology.org/2022.sigmorphon-1.24)
-
-## Talks
-
-### Peer-reviewed Talks
-
-- "Acoustic Analysis of Vowels in Idu Mishmi" at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. [Abstract](https://event.iitg.ac.in/hls27/Documents/HLS27_Abstract_book.pdf#page=159)
-
-- "From Zero to Terminal Hero" at the 32nd  Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. [PDF](https://tacosconference.github.io/css/2024_style/TalkSlides/RAMARAO.pdf)
-
-- "Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish" at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023
-
-- "Modeling irregular morphological patterns using Transformers" at HeiCAD Lightning Talks, 2022
-
-### Invited Talks
-
-- **Language Revitalization: A case of Idu Mishmi** at Microsoft Research India, 2021
-- **Language Revitalization** at Navana Tech, 2021
-
-## Poster Presentations
-
-- **Ramarao, A. K.**, & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024. [PDF](https://akkikek.xyz/presentations/labphon19_poster.pdf)
-
-- Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same... but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.
-
-- Tang, K., **Kakolu Ramarao, A.**, & Baer-Henney, D. (2022). Modeling irregular morphological patterns with recurrent neural network: the case of the L-shaped morphome. 13th Mediterranean Morphology Meeting, University of the Aegean, Greece.
-
-- **Kakolu Ramarao, A.** (2020). Analysis of POCSO cases in Uttar Pradesh. Agami, India, Bengaluru.
-
-## Grants/Awards
-
-- First prize at the [HHU Legal Hackathon 2022](https://www.heicad.hhu.de/aktivitaeten/hhu-legal-hackathon-2022). Team: **Akhilesh Kakolu Ramarao**, Phaedon Paschalis and Diana Schill.
-- First prize at the [HeiCAD Lightning Talks 2022](https://www.heicad.hhu.de/aktivitaeten/lightning-talks-2022).
-- Hardware Grant. 20 × NVIDIA® JetsonTM Nano Developer Kits. NVIDIA Academic Hardware Grant, "FOSStering Digital Humanities through Accent Diversity & Conversational Devices". Co-applicant: Kevin Tang
-- Education Grant. €9,424. e-Learning support fund, Heinrich-HeineUniversity Düsseldorf. "Interactive web-based review units for phonetics and phonology". Co-applicant: Christopher Geissler and Kevin Tang
-
-## Conference/Workshop Organization
-
-- Chief Organizer, [LibreSlam - Free and Open Source (FOSS) for everybody](https://slam.phil.hhu.de/libreslam/), Heinrich-Heine-University, Germany, 2022
-- Chief Organizer and Teaching Member, LY-CS101 2020, National College, Bengaluru, India.
-
 ## Consulting
 
-### XRI Institute
+### XRI Institute (https://www.xriglobal.ai/)
 2020-2021
 
-### Vrook
+### Vrook (https://www.vrook.co/)
 2020-2021
 
 ## Internships
 
 ### Sense Infinity Technologies
 
-**Position:** Full-stack developer
+**Position:** Full-stack developer intern
 
 ### Maruti Suzuki
 
