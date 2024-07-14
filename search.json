@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Akhilesh",
+    "section": "",
+    "text": "Understanding the spread of Extinct and Endangered languages across India\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\nJul 30, 2020\n\n\nAkhilesh\n\n\n\n\n\n\n\n\n\n\n\n\nSoftwares I use\n\n\n\n\n\n\npersonal-config\n\n\n\n\n\n\n\n\n\nMay 21, 2020\n\n\nAkhilesh\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/softwares/2020-05-21-softwares-i-use.html",
+    "href": "posts/softwares/2020-05-21-softwares-i-use.html",
+    "title": "Softwares I use",
+    "section": "",
+    "text": "Here are the list of softwares I use for almost everything.\n\n\nArch Linux with all free software.\n\n\n\nLibreWolf with vim key bindings.\n\n\n\nst\n\n\n\nNeovim and Doom Emacs\n\n\n\nNeomutt & Doom Emacs\n\n\n\nmpv\n\n\n\nZathura\n\n\n\ndwm\n\n\n\nlf\n\n\n\nGIMP\n\n\n\nTransmission\n\n\n\nLibreOffice\n\n\n\nlf\n\n\n\nzsh and fish"
+  },
+  {
+    "objectID": "posts/softwares/2020-05-21-softwares-i-use.html#softwares-i-use",
+    "href": "posts/softwares/2020-05-21-softwares-i-use.html#softwares-i-use",
+    "title": "Softwares I use",
+    "section": "",
+    "text": "Here are the list of softwares I use for almost everything.\n\n\nArch Linux with all free software.\n\n\n\nLibreWolf with vim key bindings.\n\n\n\nst\n\n\n\nNeovim and Doom Emacs\n\n\n\nNeomutt & Doom Emacs\n\n\n\nmpv\n\n\n\nZathura\n\n\n\ndwm\n\n\n\nlf\n\n\n\nGIMP\n\n\n\nTransmission\n\n\n\nLibreOffice\n\n\n\nlf\n\n\n\nzsh and fish"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Akhilesh Kakolu Ramarao",
     "section": "",
-    "text": "Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University.\nI currently work on Computational Morphology – supervised by Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney."
+    "text": "Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University.\nI currently work on Computational Morphology – supervised by Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney.\nIn my previous life, I have worked on building multilingual chatbots and voice assistants at Skit.ai, as an NLP Researcher at CivicDataLab and as a Software Engineer at Ramco Systems.\nI am actively engaged in language revitalization efforts for indigenous communities in Arunachal Pradesh, India, with a focus on Idu Mishmi and K’man Mishmi languages."
   },
   {
     "objectID": "about.html#research-interests",
@@ -25,7 +46,56 @@
     "href": "about.html#academic-positions",
     "title": "Akhilesh Kakolu Ramarao",
     "section": "Academic Positions",
-    "text": "Academic Positions\n\nHeinrich-Heine-Universität Düsseldorf, Germany\n2021-present\nPosition: Wissenschaftlicher Mitarbeiter, Department of English Language and Linguistics\n\nConducting research in computational morphology under the supervision of Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney\nTeaching computational linguistics courses for BA and MA students\nResponsible for IT administration for Slamlab"
+    "text": "Academic Positions\n\nHeinrich-Heine-Universität Düsseldorf, Germany\n2021-present\nPosition: Wissenschaftlicher Mitarbeiter, Department of English Language and Linguistics\n\nConducting research in computational morphology under the supervision of Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney\nTeaching computational linguistics courses for BA and MA students. Course list\nResponsible for IT administration for Slamlab"
+  },
+  {
+    "objectID": "about.html#teaching",
+    "href": "about.html#teaching",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Teaching",
+    "text": "Teaching\n\nLearning Inflection, Summer, 2024\nAccent unplugged: Evaluating Voice assistants, Winter, 2023\nSynthesizing speech, Summer, 2023\nLanguage technology for Linguists with Internet of Things (IoT), Winter, 2022\nLaTeX for Linguists, Winter, 2022\nTowards a career in language technology: linguistic annotation, Summer, 2022\nBasic Skills in Digital Humanities, Winter, 2021"
+  },
+  {
+    "objectID": "about.html#publications",
+    "href": "about.html#publications",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Publications",
+    "text": "Publications\n\nJeong, C., Schmitz, D., Kakolu Ramarao, A., Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology (pp. 138-150). Association for Computational Linguistics. https:// aclanthology.org/2023.sigmorphon-1.16.pdf\nKakolu Ramarao, A., Zinova, Y., Tang, K., & van de Vijver, R. (2022). HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories. In Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology (pp. 236-239). Association for Computational Linguistics. https:// aclanthology.org/2022.sigmorphon-1.24"
+  },
+  {
+    "objectID": "about.html#talks",
+    "href": "about.html#talks",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Talks",
+    "text": "Talks\n\nPeer-reviewed Talks\n\n“Acoustic Analysis of Vowels in Idu Mishmi” at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. Abstract. Presenter: Pamir Gogoi. Team: Pamir Gogoi, Akhilesh Kakolu Ramarao and Ria Borah Sonowal.\n“From Zero to Terminal Hero” at the 32nd Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. PDF\n“Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish” at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023\n“Modeling irregular morphological patterns using Transformers” at HeiCAD Lightning Talks, 2022\n\n\n\nInvited Talks\n\nLanguage Revitalization: A case of Idu Mishmi at Microsoft Research India, 2021\nLanguage Revitalization at Navana Tech, 2021"
+  },
+  {
+    "objectID": "about.html#poster-presentations",
+    "href": "about.html#poster-presentations",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Poster Presentations",
+    "text": "Poster Presentations\n\nPeer-reviewed Posters\n\nRamarao, A. K., & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024. PDF\nMuschalik, J., Schmitz, D., Kakolu Ramarao, A., & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same… but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.\nTang, K., Kakolu Ramarao, A., & Baer-Henney, D. (2022). Modeling irregular morphological patterns with recurrent neural network: the case of the L-shaped morphome. 13th Mediterranean Morphology Meeting, University of the Aegean, Greece.\n\n\n\nInvited Posters\n\nKakolu Ramarao, A. (2020). Analysis of POCSO cases in Uttar Pradesh. Agami, India, Bengaluru."
+  },
+  {
+    "objectID": "about.html#demos",
+    "href": "about.html#demos",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Demos",
+    "text": "Demos\n\nRole of linguistics in AI for social good. In Nacht der Wissenschaft. Shadowplatz, Düsseldorf, Germany, 2022"
+  },
+  {
+    "objectID": "about.html#grantsawards",
+    "href": "about.html#grantsawards",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Grants/Awards",
+    "text": "Grants/Awards\n\nFirst prize at the HHU Legal Hackathon 2022. Team: Akhilesh Kakolu Ramarao, Phaedon Paschalis and Diana Schill.\nFirst prize at the HeiCAD Lightning Talks 2022.\nHardware Grant. 20 × NVIDIA® JetsonTM Nano Developer Kits. NVIDIA Academic Hardware Grant, “FOSStering Digital Humanities through Accent Diversity & Conversational Devices”. Co-applicant: Kevin Tang\nEducation Grant. €9,424. e-Learning support fund, Heinrich-HeineUniversity Düsseldorf. “Interactive web-based review units for phonetics and phonology”. Co-applicant: Christopher Geissler and Kevin Tang"
+  },
+  {
+    "objectID": "about.html#conferenceworkshop-organization",
+    "href": "about.html#conferenceworkshop-organization",
+    "title": "Akhilesh Kakolu Ramarao",
+    "section": "Conference/Workshop Organization",
+    "text": "Conference/Workshop Organization\n\nTranslation Workshop: English to K’man Mishmi, 2023, Bamboosa Library, Tezu, Arunachal Pradesh, India\nChief Organizer, LibreSlam - Free and Open Source (FOSS) for everybody, Heinrich-Heine-University, Germany, 2022\nChief Organizer and Teaching Member, LY-CS101 2020, National College, Bengaluru, India."
   },
   {
     "objectID": "about.html#industry-experience",
@@ -49,60 +119,18 @@
     "text": "Education\n\nDayanand Sagar College of Engineering\n2012-2016\nBachelor of Automobile Engineering"
   },
   {
-    "objectID": "about.html#teaching",
-    "href": "about.html#teaching",
-    "title": "Akhilesh Kakolu Ramarao",
-    "section": "Teaching",
-    "text": "Teaching\n\nLearning Inflection, Summer, 2024\nAccent unplugged: Evaluating Voice assistants, Winter, 2023\nSynthesizing speech, Summer, 2023\nLanguage technology for Linguists with Internet of Things (IoT), Winter, 2022\nLaTeX for Linguists, Winter, 2022\nTowards a career in language technology: linguistic annotation, Summer, 2022\nBasic Skills in Digital Humanities, Winter, 2021"
-  },
-  {
-    "objectID": "about.html#publications",
-    "href": "about.html#publications",
-    "title": "Akhilesh Kakolu Ramarao",
-    "section": "Publications",
-    "text": "Publications\n\nJeong, C., Schmitz, D., Kakolu Ramarao, A., Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology (pp. 138-150). Association for Computational Linguistics. https:// aclanthology.org/2023.sigmorphon-1.16.pdf\nKakolu Ramarao, A., Zinova, Y., Tang, K., & van de Vijver, R. (2022). HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories. In Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology (pp. 236-239). Association for Computational Linguistics. https:// aclanthology.org/2022.sigmorphon-1.24"
-  },
-  {
-    "objectID": "about.html#talks",
-    "href": "about.html#talks",
-    "title": "Akhilesh Kakolu Ramarao",
-    "section": "Talks",
-    "text": "Talks\n\nPeer-reviewed Talks\n\n“Acoustic Analysis of Vowels in Idu Mishmi” at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. Abstract\n“From Zero to Terminal Hero” at the 32nd Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. PDF\n“Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish” at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023\n“Modeling irregular morphological patterns using Transformers” at HeiCAD Lightning Talks, 2022\n\n\n\nInvited Talks\n\nLanguage Revitalization: A case of Idu Mishmi at Microsoft Research India, 2021\nLanguage Revitalization at Navana Tech, 2021"
-  },
-  {
-    "objectID": "about.html#poster-presentations",
-    "href": "about.html#poster-presentations",
-    "title": "Akhilesh Kakolu Ramarao",
-    "section": "Poster Presentations",
-    "text": "Poster Presentations\n\nRamarao, A. K., & Stein, A. S. AnglistikVoices: an L2 English speech dataset for educational and technological advancement in speech technology. LabPhon 19, Hangyang University, Seoul, South Korea, 2024. PDF\nMuschalik, J., Schmitz, D., Kakolu Ramarao, A., & Baer-Henney, D. (2023). Acoustic duration and typing timing - same, same… but different? Phonetics and Phonology in Europe 2023, Nijmegen, Netherlands.\nTang, K., Kakolu Ramarao, A., & Baer-Henney, D. (2022). Modeling irregular morphological patterns with recurrent neural network: the case of the L-shaped morphome. 13th Mediterranean Morphology Meeting, University of the Aegean, Greece.\nKakolu Ramarao, A. (2020). Analysis of POCSO cases in Uttar Pradesh. Agami, India, Bengaluru."
-  },
-  {
-    "objectID": "about.html#grantsawards",
-    "href": "about.html#grantsawards",
-    "title": "Akhilesh Kakolu Ramarao",
-    "section": "Grants/Awards",
-    "text": "Grants/Awards\n\nFirst prize at the HHU Legal Hackathon 2022. Team: Akhilesh Kakolu Ramarao, Phaedon Paschalis and Diana Schill.\nFirst prize at the HeiCAD Lightning Talks 2022.\nHardware Grant. 20 × NVIDIA® JetsonTM Nano Developer Kits. NVIDIA Academic Hardware Grant, “FOSStering Digital Humanities through Accent Diversity & Conversational Devices”. Co-applicant: Kevin Tang\nEducation Grant. €9,424. e-Learning support fund, Heinrich-HeineUniversity Düsseldorf. “Interactive web-based review units for phonetics and phonology”. Co-applicant: Christopher Geissler and Kevin Tang"
-  },
-  {
-    "objectID": "about.html#conferenceworkshop-organization",
-    "href": "about.html#conferenceworkshop-organization",
-    "title": "Akhilesh Kakolu Ramarao",
-    "section": "Conference/Workshop Organization",
-    "text": "Conference/Workshop Organization\n\nChief Organizer, LibreSlam - Free and Open Source (FOSS) for everybody, Heinrich-Heine-University, Germany, 2022\nChief Organizer and Teaching Member, LY-CS101 2020, National College, Bengaluru, India."
-  },
-  {
     "objectID": "about.html#consulting",
     "href": "about.html#consulting",
     "title": "Akhilesh Kakolu Ramarao",
     "section": "Consulting",
-    "text": "Consulting\n\nXRI Institute\n2020-2021\n\n\nVrook\n2020-2021"
+    "text": "Consulting\n\nXRI Institute (https://www.xriglobal.ai/)\n2020-2021\n\n\nVrook (https://www.vrook.co/)\n2020-2021"
   },
   {
     "objectID": "about.html#internships",
     "href": "about.html#internships",
     "title": "Akhilesh Kakolu Ramarao",
     "section": "Internships",
-    "text": "Internships\n\nSense Infinity Technologies\nPosition: Full-stack developer\n\n\nMaruti Suzuki\nPosition: Industry trainee"
+    "text": "Internships\n\nSense Infinity Technologies\nPosition: Full-stack developer intern\n\n\nMaruti Suzuki\nPosition: Industry trainee"
   },
   {
     "objectID": "posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html",
@@ -117,26 +145,5 @@
     "title": "Understanding the spread of Extinct and Endangered languages across India",
     "section": "Data Description",
     "text": "Data Description\nThe dataset of extinct and endangered languages around the world is created by The Guardian and is available here.\nVariables: The name of language, longitude, latitude, degree of endangerment and the number of speakers.\n\nData Visualisation\nLanguages by latitude/longitude and Population are plotted.\nThe interactive visualisation of Languages by Latitude/longitude inform us, where all the extinct and endangered languages are located across India.\nSimilarly, Languages by number of speakers is plotted.\n\n\nCode\n#collapse-hide\nimport numpy as np\nimport pandas as pd\npd.options.mode.chained_assignment = None\n\nfrom IPython.display import HTML\nfrom chart_studio import plotly\nimport plotly.graph_objs as go\nfrom plotly import tools\nfrom plotly.offline import iplot, init_notebook_mode\ninit_notebook_mode()\n\nlanguage_data = pd.read_csv('data.csv', usecols=[0, 1, 5, 7, 10, 12, 13])\nlanguage_data = language_data.rename(\n    columns={'Name in English':'language', 'Country codes alpha 3':'locations',\n             'Degree of endangerment':'risk', 'Number of speakers':'population'})\nlanguage_data.columns = language_data.columns.str.lower()\nlanguage_data['risk'] = language_data['risk'].str.title()\nlanguage_data['population'] = language_data['population'].fillna(-1)\n\n# endangered or extinct languages in India\nlanguage_ind = language_data[language_data['locations'].str.contains('IND') == True]\n\nlanguage_ind['risk'] = language_ind['risk'].replace(\n    ['Vulnerable', 'Definitely Endangered', 'Severely Endangered',\n     'Critically Endangered', 'Extinct'], [1, 2, 3, 4, 5])\n\nlanguage_ind = language_ind[['language', 'risk', 'population', 'latitude', 'longitude']]\n\n\n\n\nLanguages by Latitude/Longitude\n\n\nCode\n#collapse-hide\nlabels = ['Isolated', 'Threatened', 'Endangered', 'Abandoned', 'Extinct']\ncolors = ['rgb(0, 157, 220)', 'rgb(128, 206, 237)', 'rgb(255, 182, 128)',\n          'rgb(255, 115, 13)', 'rgb(242, 23, 13)']\n\ntraces = []\nfor i in range(1, 6):\n    traces.append(dict(\n        type = 'scattergeo',\n        lon = language_ind[language_ind.risk == i]['longitude'],\n        lat = language_ind[language_ind.risk == i]['latitude'],\n        text = language_ind[language_ind.risk == i]['language'],\n        mode = 'markers',\n        name = labels[i-1],\n        marker = dict( \n            size = 12,\n            opacity = 0.85,\n            color = colors[i-1],\n            line = dict(color = 'rgb(255, 255, 255)', width = 1)\n        )\n    ))\n# print(traces)\nlayout = dict(\n         title = 'Languages by Latitude/Longitude in India (2016)&lt;br&gt;'\n                 '&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;',\n         showlegend = True,\n         legend = dict(\n             x = 0.85, y = 0.4\n         ),\n        geo = dict(\n                 scope = 'asia',\n                 showland = True,\n                 landcolor = 'rgb(250, 250, 250)',\n                 subunitwidth = 1,\n                 subunitcolor = 'rgb(217, 217, 217)',\n                 countrywidth = 1,\n                 countrycolor = 'rgb(217, 217, 217)',\n                 showlakes = True,\n                 lakecolor = 'rgb(255, 255, 255)')\n        )\n\n\nfigure = dict(data = traces, layout = layout)\n\n\n\n\nCode\n#collapse-hide\nimport plotly.io as pio\n\npio.show(figure)\n\n\n                                                \n\n\n\n\nLanguages by Population\n\n\nCode\n#collapse-hide\nlanguage_ind = language_ind.sort_values('population', ascending = False)\nlanguage_ind['text'] = language_ind['language'] + '&lt;br&gt;' + 'Population ' + language_ind[\n                                                                 'population'].astype(str)\n\nnew_traces = []\nfor i in range(1, 6):\n    new_traces.append(dict(\n        type = 'scattergeo',\n        lon = language_ind[language_ind.risk == i]['longitude'],\n        lat = language_ind[language_ind.risk == i]['latitude'],\n        text = language_ind[language_ind.risk == i]['text'],\n        mode = 'markers',\n        name = labels[i-1],\n        hoverinfo = 'text+name',\n        marker = dict( \n            size = (language_ind[language_ind.risk == i]['population'] + 1) ** 0.18 * 6,\n            opacity = 0.85,\n            color = colors[i-1],\n            line = dict(color = 'rgb(255, 255, 255)', width = 1)\n        )\n    ))\n\nnew_layout = dict(\n         title = 'Languages by Population in India (2016)&lt;br&gt;'\n                 '&lt;sub&gt;Click Legend to Display or Hide Categories&lt;/sub&gt;',\n         showlegend = True,\n         legend = dict(\n             x = 0.85, y = 0.4\n         ),\n         geo = dict(\n             scope = 'asia',\n             showland = True,\n             landcolor = 'rgb(250, 250, 250)',\n             subunitwidth = 1,\n             subunitcolor = 'rgb(217, 217, 217)',\n             countrywidth = 1,\n             countrycolor = 'rgb(217, 217, 217)',\n             showlakes = True,\n             lakecolor = 'rgb(255, 255, 255)')\n        )\n\nnew_figure = dict(data = new_traces, layout = new_layout)\n\n\n\n\nCode\n#collapse-hide\nimport plotly.io as pio\n\npio.show(new_figure)"
-  },
-  {
-    "objectID": "posts/softwares/2020-05-21-softwares-i-use.html",
-    "href": "posts/softwares/2020-05-21-softwares-i-use.html",
-    "title": "Softwares I use",
-    "section": "",
-    "text": "Here are the list of softwares I use for almost everything.\n\n\nArch Linux with all free software.\n\n\n\nLibreWolf with vim key bindings.\n\n\n\nst\n\n\n\nNeovim and Doom Emacs\n\n\n\nNeomutt & Doom Emacs\n\n\n\nmpv\n\n\n\nZathura\n\n\n\ndwm\n\n\n\nlf\n\n\n\nGIMP\n\n\n\nTransmission\n\n\n\nLibreOffice\n\n\n\nlf\n\n\n\nzsh and fish"
-  },
-  {
-    "objectID": "posts/softwares/2020-05-21-softwares-i-use.html#softwares-i-use",
-    "href": "posts/softwares/2020-05-21-softwares-i-use.html#softwares-i-use",
-    "title": "Softwares I use",
-    "section": "",
-    "text": "Here are the list of softwares I use for almost everything.\n\n\nArch Linux with all free software.\n\n\n\nLibreWolf with vim key bindings.\n\n\n\nst\n\n\n\nNeovim and Doom Emacs\n\n\n\nNeomutt & Doom Emacs\n\n\n\nmpv\n\n\n\nZathura\n\n\n\ndwm\n\n\n\nlf\n\n\n\nGIMP\n\n\n\nTransmission\n\n\n\nLibreOffice\n\n\n\nlf\n\n\n\nzsh and fish"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Akhilesh",
-    "section": "",
-    "text": "Understanding the spread of Extinct and Endangered languages across India\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\nJul 30, 2020\n\n\nAkhilesh\n\n\n\n\n\n\n\n\n\n\n\n\nSoftwares I use\n\n\n\n\n\n\npersonal-config\n\n\n\n\n\n\n\n\n\nMay 21, 2020\n\n\nAkhilesh\n\n\n\n\n\n\nNo matching items"
   }
 ]

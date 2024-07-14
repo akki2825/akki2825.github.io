@@ -9,7 +9,7 @@
 <link>https://akkikek.xyz/</link>
 <atom:link href="https://akkikek.xyz/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.557</generator>
+<generator>quarto-1.5.54</generator>
 <lastBuildDate>Thu, 30 Jul 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Understanding the spread of Extinct and Endangered languages across India</title>
@@ -254,8 +254,10 @@ background-color: null;
 font-style: inherit;">=</span> []</span>
 <span id="cb2-7"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
@@ -531,8 +533,10 @@ background-color: null;
 font-style: inherit;">=</span> []</span>
 <span id="cb4-7"><span class="cf" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
+font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
