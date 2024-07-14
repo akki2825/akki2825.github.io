@@ -19,7 +19,7 @@ Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Research
 
 I currently work on Computational Morphology – supervised by [Prof. Dr. Kevin Tang](https://kevintang.org/) and [Dr. Dinah Baer-Henney](https://blogs.phil.hhu.de/dbh13/).
 
-In my previous life, I have worked on building multilingual chatbots and voice assistants at [Skit.ai](https://skit.ai/), as an NLP Researcher at [CivicDataLab](https://civicdatalab.in/) and as a Software Engineer at [Ramco Systems](https://ramco.com).
+In my previous life, I have worked on building multilingual chatbots and voice assistants at [Skit.ai](https://skit.ai/), as an NLP Researcher at [CivicDataLab](https://civicdatalab.in/) and as a Software Engineer at [Ramco Systems](https://ramco.com). More about my industry experience can be found [here](#Industry-Experience).
 
 I am actively engaged in language revitalization efforts for indigenous communities in Arunachal Pradesh, India, with a focus on Idu Mishmi and K'man Mishmi languages.
 
