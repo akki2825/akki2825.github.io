@@ -39,12 +39,11 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 ## Academic Positions
 
-### Heinrich-Heine-Universität Düsseldorf, Germany
+### [Heinrich-Heine-Universität Düsseldorf, Germany](https://hhu.de/)
 2021-present
 
 **Position:** Wissenschaftlicher Mitarbeiter, Department of English Language and Linguistics
 
-- Conducting research in computational morphology under the supervision of Prof. Dr. Kevin Tang and Dr. Dinah Baer-Henney
 - Teaching computational linguistics courses for BA and MA students. [Course list](#teaching)
 - Responsible for IT administration for [Slamlab](https://slam.phil.hhu.de/)
 
