@@ -58,7 +58,7 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 ## Publications
 
-- Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.** et al. Typing /s/-morphology between the keys?. Read Writ (2024). \url{https://doi.org/10.1007/s11145-024-10586-9}
+- Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.** et al. Typing /s/-morphology between the keys?. Read Writ (2024). [doi](https://doi.org/10.1007/s11145-024-10586-9)
 
 - Jeong, C., Schmitz, D., **Kakolu Ramarao, A.**, Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In *Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 138-150). Association for Computational Linguistics. [https:// aclanthology.org/2023.sigmorphon-1.16.pdf](https://aclanthology.org/2023.sigmorphon-1.16.pdf)
 
