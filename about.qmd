@@ -58,6 +58,8 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 ## Publications
 
+- Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.** et al. Typing /s/-morphology between the keys?. Read Writ (2024). \url{https://doi.org/10.1007/s11145-024-10586-9}
+
 - Jeong, C., Schmitz, D., **Kakolu Ramarao, A.**, Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In *Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 138-150). Association for Computational Linguistics. [https:// aclanthology.org/2023.sigmorphon-1.16.pdf](https://aclanthology.org/2023.sigmorphon-1.16.pdf)
 
 - **Kakolu Ramarao, A.**, Zinova, Y., Tang, K., & van de Vijver, R. (2022). HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories. In *Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 236-239). Association for Computational Linguistics. [https:// aclanthology.org/2022.sigmorphon-1.24](https:// aclanthology.org/2022.sigmorphon-1.24)
@@ -65,6 +67,8 @@ I am actively engaged in language revitalization efforts for indigenous communit
 ## Talks
 
 ### Peer-reviewed Talks
+
+- "A computational approach to understanding the cognitive reality of morphomic patterns: the case of L-shaped morphomes in Spanish" at Annual Meeting of Linguistics Association of Great Britain and Northern Ireland 2024, Newcastle University, United Kingdom. Team: **Akhilesh Kakolu Ramarao**, Kevin Tang and Dinah Baer-Henney.
 
 - "Acoustic Analysis of Vowels in Idu Mishmi" at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. [Abstract](https://event.iitg.ac.in/hls27/Documents/HLS27_Abstract_book.pdf#page=159). Presenter: Pamir Gogoi. Team: Pamir Gogoi, **Akhilesh Kakolu Ramarao** and Ria Borah Sonowal.
 
