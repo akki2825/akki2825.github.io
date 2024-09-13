@@ -48,6 +48,7 @@ I am actively engaged in language revitalization efforts for indigenous communit
 - Responsible for IT administration for [Slamlab](https://slam.phil.hhu.de/)
 
 ## Teaching
+- [LLMs in Linguistic Research](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=256938&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2024
 - [Learning Inflection](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=252526&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2024
 - [Accent unplugged: Evaluating Voice assistants](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=244439&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2023
 - [Synthesizing speech](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=240679&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2023
@@ -67,8 +68,9 @@ I am actively engaged in language revitalization efforts for indigenous communit
 ## Talks
 
 ### Peer-reviewed Talks
+- "KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language" at KONVENS 2024, University of Vienna, Austria. Team: **Akhilesh Kakolu Ramarao**, Wiebke Petersen, Anna Sophia Stein, Emma Stein, Hanxin Xia. Presenter: **Akhilesh Kakolu Ramarao** and Emma Stein [PDF](https://akkikek.xyz/presentations/konvens2024.pdf)
 
-- "A computational approach to understanding the cognitive reality of morphomic patterns: the case of L-shaped morphomes in Spanish" at Annual Meeting of Linguistics Association of Great Britain and Northern Ireland 2024, Newcastle University, United Kingdom. Team: **Akhilesh Kakolu Ramarao**, Kevin Tang and Dinah Baer-Henney.
+- "A computational approach to understanding the cognitive reality of morphomic patterns: the case of L-shaped morphomes in Spanish" at Annual Meeting of Linguistics Association of Great Britain and Northern Ireland 2024, Newcastle University, United Kingdom. Team: **Akhilesh Kakolu Ramarao**, Kevin Tang and Dinah Baer-Henney. Presenter: **Akhilesh Kakolu Ramarao** [PDF](https://akkikek.xyz/presentations/lagb2024.pdf)
 
 - "Acoustic Analysis of Vowels in Idu Mishmi" at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. [Abstract](https://event.iitg.ac.in/hls27/Documents/HLS27_Abstract_book.pdf#page=159). Presenter: Pamir Gogoi. Team: Pamir Gogoi, **Akhilesh Kakolu Ramarao** and Ria Borah Sonowal.
 
