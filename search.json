@@ -14,13 +14,6 @@
     "text": "Here are the list of softwares I use for almost everything.\n\n\nArch Linux with all free software.\n\n\n\nLibreWolf with vim key bindings.\n\n\n\nst\n\n\n\nNeovim and Doom Emacs\n\n\n\nNeomutt & Doom Emacs\n\n\n\nmpv\n\n\n\nZathura\n\n\n\ndwm\n\n\n\nlf\n\n\n\nGIMP\n\n\n\nTransmission\n\n\n\nLibreOffice\n\n\n\nlf\n\n\n\nzsh and fish"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Akhilesh",
-    "section": "",
-    "text": "Understanding the spread of Extinct and Endangered languages across India\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\nJul 30, 2020\n\n\nAkhilesh\n\n\n\n\n\n\n\n\n\n\n\n\nSoftwares I use\n\n\n\n\n\n\npersonal-config\n\n\n\n\n\n\n\n\n\nMay 21, 2020\n\n\nAkhilesh\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Akhilesh Kakolu Ramarao",
@@ -53,7 +46,7 @@
     "href": "about.html#teaching",
     "title": "Akhilesh Kakolu Ramarao",
     "section": "Teaching",
-    "text": "Teaching\n\nLearning Inflection, Summer, 2024\nAccent unplugged: Evaluating Voice assistants, Winter, 2023\nSynthesizing speech, Summer, 2023\nLanguage technology for Linguists with Internet of Things (IoT), Winter, 2022\nLaTeX for Linguists, Winter, 2022\nTowards a career in language technology: linguistic annotation, Summer, 2022\nBasic Skills in Digital Humanities, Winter, 2021"
+    "text": "Teaching\n\nLLMs in Linguistic Research, Winter, 2024\nLearning Inflection, Summer, 2024\nAccent unplugged: Evaluating Voice assistants, Winter, 2023\nSynthesizing speech, Summer, 2023\nLanguage technology for Linguists with Internet of Things (IoT), Winter, 2022\nLaTeX for Linguists, Winter, 2022\nTowards a career in language technology: linguistic annotation, Summer, 2022\nBasic Skills in Digital Humanities, Winter, 2021"
   },
   {
     "objectID": "about.html#publications",
@@ -67,7 +60,7 @@
     "href": "about.html#talks",
     "title": "Akhilesh Kakolu Ramarao",
     "section": "Talks",
-    "text": "Talks\n\nPeer-reviewed Talks\n\n“A computational approach to understanding the cognitive reality of morphomic patterns: the case of L-shaped morphomes in Spanish” at Annual Meeting of Linguistics Association of Great Britain and Northern Ireland 2024, Newcastle University, United Kingdom. Team: Akhilesh Kakolu Ramarao, Kevin Tang and Dinah Baer-Henney.\n“Acoustic Analysis of Vowels in Idu Mishmi” at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. Abstract. Presenter: Pamir Gogoi. Team: Pamir Gogoi, Akhilesh Kakolu Ramarao and Ria Borah Sonowal.\n“From Zero to Terminal Hero” at the 32nd Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. PDF\n“Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish” at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023\n“Modeling irregular morphological patterns using Transformers” at HeiCAD Lightning Talks, 2022\n\n\n\nInvited Talks\n\nLanguage Revitalization: A case of Idu Mishmi at Microsoft Research India, 2021\nLanguage Revitalization at Navana Tech, 2021"
+    "text": "Talks\n\nPeer-reviewed Talks\n\n“KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language” at KONVENS 2024, University of Vienna, Austria. Team: Akhilesh Kakolu Ramarao, Wiebke Petersen, Anna Sophia Stein, Emma Stein, Hanxin Xia. Presenter: Akhilesh Kakolu Ramarao and Emma Stein PDF\n“A computational approach to understanding the cognitive reality of morphomic patterns: the case of L-shaped morphomes in Spanish” at Annual Meeting of Linguistics Association of Great Britain and Northern Ireland 2024, Newcastle University, United Kingdom. Team: Akhilesh Kakolu Ramarao, Kevin Tang and Dinah Baer-Henney. Presenter: Akhilesh Kakolu Ramarao PDF\n“Acoustic Analysis of Vowels in Idu Mishmi” at the 27th Himalayan Languages Symposium, 2024, IIT Guwahati, India. Abstract. Presenter: Pamir Gogoi. Team: Pamir Gogoi, Akhilesh Kakolu Ramarao and Ria Borah Sonowal.\n“From Zero to Terminal Hero” at the 32nd Tagung der Computerlinguistik-Studierenden (TaCoS), 1 July 2023, Heinrich Heine University, Düsseldorf, Germany. PDF\n“Can Neural Networks learn human-like behavior when inflecting verbs? The case of Spanish” at the Five-Minute Linguist competition, Linguistic Society of America 97th Annual Meeting, 2023\n“Modeling irregular morphological patterns using Transformers” at HeiCAD Lightning Talks, 2022\n\n\n\nInvited Talks\n\nLanguage Revitalization: A case of Idu Mishmi at Microsoft Research India, 2021\nLanguage Revitalization at Navana Tech, 2021"
   },
   {
     "objectID": "about.html#poster-presentations",
@@ -131,6 +124,13 @@
     "title": "Akhilesh Kakolu Ramarao",
     "section": "Internships",
     "text": "Internships\n\nSense Infinity Technologies\nPosition: Full-stack developer intern\n\n\nMaruti Suzuki\nPosition: Industry trainee"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Akhilesh",
+    "section": "",
+    "text": "Understanding the spread of Extinct and Endangered languages across India\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\nJul 30, 2020\n\n\nAkhilesh\n\n\n\n\n\n\n\n\n\n\n\n\nSoftwares I use\n\n\n\n\n\n\npersonal-config\n\n\n\n\n\n\n\n\n\nMay 21, 2020\n\n\nAkhilesh\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html",
