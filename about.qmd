@@ -69,7 +69,7 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 ### Peer-reviewed Talks
 
-- "Community-driven Language Revitalization: Translating Children’s Literature in K'man Mishmi" at International Conference on Language, Ecology and Culture 2024, NEILAC, Guwahati, India. Team: Akhilesh Kakolu Ramarao, Satyanarayan Mundayoor, Pamir Gogoi, Sakelu Chikro. Presenter: Sakelu Chikro. [PDF](https://akkikek.xyz/presentations/iclc2024.pdf)
+- "Community-driven Language Revitalization: Translating Children’s Literature in K'man Mishmi" at International Conference on Language, Ecology and Culture 2024, NEILAC, Guwahati, India. Team: **Akhilesh Kakolu Ramarao**, Satyanarayan Mundayoor, Pamir Gogoi, Sakelu Chikro. Presenter: Sakelu Chikro. [PDF](https://akkikek.xyz/presentations/iclc2024.pdf)
 
 - "KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language" at KONVENS 2024, University of Vienna, Austria. Team: **Akhilesh Kakolu Ramarao**, Wiebke Petersen, Anna Sophia Stein, Emma Stein, Hanxin Xia. Presenter: **Akhilesh Kakolu Ramarao** and Emma Stein. [PDF](https://akkikek.xyz/presentations/konvens2024.pdf)
 
