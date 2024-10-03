@@ -2,7 +2,7 @@
 title: "Akhilesh Kakolu Ramarao"
 image: profile.jpg
 about:
-  template: trestles
+  template: solana
   links:
     - icon: twitter
       text: Twitter
@@ -19,7 +19,7 @@ Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Research
 
 I currently work on Computational Morphology – supervised by [Prof. Dr. Kevin Tang](https://kevintang.org/) and [Dr. Dinah Baer-Henney](https://blogs.phil.hhu.de/dbh13/).
 
-In my previous life, I have worked on building multilingual chatbots and voice assistants at [Skit.ai](https://skit.ai/), as an NLP Researcher at [CivicDataLab](https://civicdatalab.in/) and as a Software Engineer at [Ramco Systems](https://ramco.com). More about my industry experience can be found [here](#Industry-Experience).
+In my previous life, I have worked on building multilingual chatbots and voice assistants at [Skit.ai](https://skit.ai/), as an NLP Researcher at [CivicDataLab](https://civicdatalab.in/) and as a Software Engineer at [Ramco Systems](https://ramco.com).
 
 I am actively engaged in language revitalization efforts for indigenous communities in Arunachal Pradesh, India, with a focus on Idu Mishmi and K'man Mishmi languages.
 
@@ -68,7 +68,10 @@ I am actively engaged in language revitalization efforts for indigenous communit
 ## Talks
 
 ### Peer-reviewed Talks
-- "KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language" at KONVENS 2024, University of Vienna, Austria. Team: **Akhilesh Kakolu Ramarao**, Wiebke Petersen, Anna Sophia Stein, Emma Stein, Hanxin Xia. Presenter: **Akhilesh Kakolu Ramarao** and Emma Stein [PDF](https://akkikek.xyz/presentations/konvens2024.pdf)
+
+- "Community-driven Language Revitalization: Translating Children’s Literature in K'man Mishmi" at International Conference on Language, Ecology and Culture 2024, NEILAC, Guwahati, India. Team: Akhilesh Kakolu Ramarao, Satyanarayan Mundayoor, Pamir Gogoi, Sakelu Chikro. Presenter: Sakelu Chikro. [PDF](https://akkikek.xyz/presentations/iclc2024.pdf)
+
+- "KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language" at KONVENS 2024, University of Vienna, Austria. Team: **Akhilesh Kakolu Ramarao**, Wiebke Petersen, Anna Sophia Stein, Emma Stein, Hanxin Xia. Presenter: **Akhilesh Kakolu Ramarao** and Emma Stein. [PDF](https://akkikek.xyz/presentations/konvens2024.pdf)
 
 - "A computational approach to understanding the cognitive reality of morphomic patterns: the case of L-shaped morphomes in Spanish" at Annual Meeting of Linguistics Association of Great Britain and Northern Ireland 2024, Newcastle University, United Kingdom. Team: **Akhilesh Kakolu Ramarao**, Kevin Tang and Dinah Baer-Henney. Presenter: **Akhilesh Kakolu Ramarao** [PDF](https://akkikek.xyz/presentations/lagb2024.pdf)
 
