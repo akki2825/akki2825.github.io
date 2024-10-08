@@ -59,6 +59,8 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 ## Publications
 
+- **Kakolu Ramarao, A.**, Petersen, W., Stein, A., Stein, E., & Xia, H. (2024). KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language. In Proceedings of GermEval 2024 Shared Task on Statement Segmentation in German Easy Language (StaGE), pages 15–27, Vienna, Austria. Association for Computational Lingustics. [https://aclanthology.org/2024.germeval-1.2.pdf](https://aclanthology.org/2024.germeval-1.2.pdf)
+
 - Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.** et al. Typing /s/-morphology between the keys?. Read Writ (2024). [DOI](https://doi.org/10.1007/s11145-024-10586-9)
 
 - Jeong, C., Schmitz, D., **Kakolu Ramarao, A.**, Stein, A., & Tang, K. (2023). Linear discriminative learning: a competitive non-neural baseline for morphological inflection. In *Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 138-150). Association for Computational Linguistics. [https:// aclanthology.org/2023.sigmorphon-1.16.pdf](https://aclanthology.org/2023.sigmorphon-1.16.pdf)
