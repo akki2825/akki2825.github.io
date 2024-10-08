@@ -59,7 +59,7 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 ## Publications
 
-- **Kakolu Ramarao, A.**, Petersen, W., Stein, A., Stein, E., & Xia, H. (2024). KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language. In Proceedings of GermEval 2024 Shared Task on Statement Segmentation in German Easy Language (StaGE), pages 15–27, Vienna, Austria. Association for Computational Lingustics. [https://aclanthology.org/2024.germeval-1.2.pdf](https://aclanthology.org/2024.germeval-1.2.pdf)
+- **Kakolu Ramarao, A.**, Petersen, W., Stein, A., Stein, E., & Xia, H. (2024). KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language. In *Proceedings of GermEval 2024 Shared Task on Statement Segmentation in German Easy Language (StaGE)* (pp. 15–27), Vienna, Austria. Association for Computational Lingustics. [https://aclanthology.org/2024.germeval-1.2.pdf](https://aclanthology.org/2024.germeval-1.2.pdf)
 
 - Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.** et al. Typing /s/-morphology between the keys?. Read Writ (2024). [DOI](https://doi.org/10.1007/s11145-024-10586-9)
 
