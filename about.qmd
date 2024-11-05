@@ -13,6 +13,8 @@ about:
     - icon: github
       text: Github
       href: https://github.com/akki2825
+	- icon: {{ai arxiv}}
+
 ---
 
 Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University, Germany.
@@ -34,8 +36,8 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 - **Past experience:** Haskell, Dart, JavaScript (AngularJS)
 - **Frameworks:** PyTorch, Flutter
-
 - **Platforms:** Arch linux, Ubuntu
+- **Cloud:** AWS, GCP, High-performance computing (HPC)
 
 ## Academic Positions
 
