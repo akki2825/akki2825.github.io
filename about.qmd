@@ -13,8 +13,6 @@ about:
     - icon: github
       text: Github
       href: https://github.com/akki2825
-	- icon: {{ai arxiv}}
-
 ---
 
 Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University, Germany.
