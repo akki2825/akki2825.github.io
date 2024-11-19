@@ -47,7 +47,16 @@ I am actively engaged in language revitalization efforts for indigenous communit
 - Teaching computational linguistics courses for BA and MA students. [Course list](#teaching)
 - Responsible for IT administration for [Slamlab](https://slam.phil.hhu.de/)
 
+## Education
+
+### M.A., Linguistics
+Heinrich-Heine-Universität Düsseldorf, Germany, 2022-2024
+
+### B.E., Automobile Engineering
+Dayananda Sagar College of Engineering, Bengaluru, India, 2012-2016
+
 ## Teaching
+
 - [LLMs in Linguistic Research](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=256938&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2024
 - [Learning Inflection](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=252526&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Summer, 2024
 - [Accent unplugged: Evaluating Voice assistants](https://lsf.hhu.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=244439&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung), Winter, 2023
@@ -165,13 +174,6 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 **Role:** Volunteer
 
-## Education
-
-#### Dayanand Sagar College of Engineering
-
-2012-2016
-
-Bachelor of Automobile Engineering
 
 ## Consulting
 
