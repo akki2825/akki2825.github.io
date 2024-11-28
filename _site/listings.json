@@ -2,19 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/aeneas/2021-12-07-install-aeneas.html",
-      "/posts/mfa/2021-11-09-mfa.html",
       "/posts/low-resource-langs-india/2020-07-30-endangered-languages-of-india.html",
-      "/posts/us-foss/2020-05-29-US-government-take-on-FOSS.html",
-      "/posts/softwares/2020-05-21-softwares-i-use.html",
-      "/posts/artificial-neuron/2017-02-08-artificial-neuron.html",
-      "/posts/ml-implementation/2017-01-31-ml-implementation.html",
-      "/posts/github/2017-01-28-talk-about-github.html",
-      "/posts/ml-concepts/2017-01-20-ml-concepts.html",
-      "/posts/rl/2017-01-13-reinforcement-learning.html",
-      "/posts/feature-engineering/2016-12-31-feature-engineering.html",
-      "/posts/unsupervised-learning/2016-12-28-unsupervised-learning-clustering.html",
-      "/posts/linux-filesystem/2016-12-10-linux-file-system.html"
+      "/posts/softwares/2020-05-21-softwares-i-use.html"
     ]
   }
 ]

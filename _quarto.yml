@@ -4,10 +4,25 @@ project:
 website:
   title: "Akhilesh"
   navbar:
-    right:
+    left:
       - about.qmd
       - icon: rss
         href: index.xml
+  page-footer:
+    center:
+      - text: "About"
+        href: about.qmd
+
+      - icon: github
+        href: https://github.com/akki2825/akki2825.github.io
+        aria-label: Quarto GitHub
+      - icon: twitter
+        href: https://x.com/Akhilesh_k_r
+        aria-label: Quarto Twitter
+      - icon: linkedin
+        href: https://www.linkedin.com/in/akhilesh-kr/
+        aria-label: Quarto LinkedIn
+
 format:
   html:
     theme: journal
