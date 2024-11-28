@@ -14,7 +14,8 @@ about:
       text: Github
       href: https://github.com/akki2825
     - text: Resume
-      href: https://akkikek.xyz/files/resume.pdf
+      icon: file-pdf
+      href: resume.pdf
 ---
 
 Hello! I am Akhilesh Kakolu Ramarao. I am a Natural Language Processing Researcher, currently working as a Wissenschaftlicher Mitarbeiter at the Department of English Language and Linguistics, Heinrich Heine University, Germany.
