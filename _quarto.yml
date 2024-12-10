@@ -27,5 +27,5 @@ website:
 
 format:
   html:
-    theme: journal
+    theme: default
     css: styles.css
