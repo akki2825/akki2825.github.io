@@ -26,4 +26,4 @@ I am actively engaged in language revitalization efforts for indigenous communit
 
 In my previous life, I have worked on building multilingual chatbots and voice assistants at [Skit.ai](https://skit.ai/), as an NLP Researcher at [CivicDataLab](https://civicdatalab.in/) and as a Software Engineer at [Ramco Systems](https://ramco.com).
 
-To know more about my work, you can check my resume [here](../files/resume.pdf).
+To know more about my work, you can check my resume [here](resume.pdf).
