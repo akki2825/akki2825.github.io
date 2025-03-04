@@ -29,3 +29,4 @@ format:
   html:
     theme: default
     css: styles.css
+    include-in-header: "plausible.html"
