@@ -18,7 +18,7 @@ about:
       href: resume.pdf
 ---
 
-Hello! I am Akhilesh Kakolu Ramarao. I am a PhD student at the Heinrich Heine University supervised by [Prof. Dr. Kevin Tang](https://kevintang.org/) and [Dr. Dinah Baer-Henney](https://blogs.phil.hhu.de/dbh13/). I use computational modeling to understand how people process language. Specifically, I focus on modeling productive irregular patterns in Romance languages.
+Hello! I am Akhilesh Kakolu Ramarao. I am a PhD student at the Heinrich Heine University supervised by [Prof. Dr. Kevin Tang](https://kevintang.org/) and [Dr. Dinah Baer-Henney](https://blogs.phil.hhu.de/dbh13/). I use computational modeling to understand how people process language. Specifically, I focus on modeling morphological patterns in Romance languages.
 
 In addition to my research, I teach computational linguistics courses at the Department of English Language and Linguistics. I am also a member of the [Slamlab](https://slam.phil.hhu.de/) research group.
 
