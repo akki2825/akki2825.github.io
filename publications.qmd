@@ -1,0 +1,20 @@
+---
+title: "Publications"
+---
+
+## Journal Articles
+
+`2024` &emsp; Muschalik, J., Schmitz, D., **Kakolu Ramarao, A.** & Baer-Henney D. [Typing /s/---morphology between the keys?](https://doi.org/10.1007/s11145-024-10586-9) *Reading and Writing (2024)*. [https://doi.org/10.1007/s11145-024-10586-9](https://doi.org/10.1007/s11145-024-10586-9)
+
+## Conference Proceedings
+        
+`accepted` &emsp; **Kakolu Ramarao. A**, Tang K. & Baer-Henney D. [Frequency matters: Modeling irregular morphological patterns in Spanish with Transformers](https://arxiv.org/pdf/2410.21013). In *Findings of the Association for Computational Linguistics: ACL 2025,* Vienna, Austria. Preprint: [https://arxiv.org/pdf/2410.21013](https://arxiv.org/pdf/2410.21013)
+
+`accepted` &emsp; Merchant R., **Kakolu Ramarao A.** & Tang K. [Connecting the Persian-speaking world through transliteration](https://arxiv.org/pdf/2502.20047]). In *3rd North American Conference on Iranian Linguistics.* Preprint: [https://arxiv.org/pdf/2502.20047](https://arxiv.org/pdf/2502.20047)
+
+`2024` &emsp; **Kakolu Ramarao, A.**, Petersen, W., Stein, A., Stein, E., & Xia, H. (2024). [KlarTextCoders at StaGE: Automatic Statement Annotations for German Easy Language](https://aclanthology.org/2024.germeval-1.2.pdf). In *Proceedings of GermEval 2024 Shared Task on Statement Segmentation in German Easy Language (StaGE)* (pp. 15–27), Vienna, Austria. Association for Computational Lingustics. [https://aclanthology.org/2024.germeval-1.2.pdf](https://aclanthology.org/2024.germeval-1.2.pdf)
+
+`2023` &emsp; Jeong, C., Schmitz, D., **Kakolu Ramarao, A.**, Stein, A., & Tang, K. (2023). [Linear discriminative learning: a competitive non-neural baseline for morphological inflection](https://doi.org/10.18653/v1/2023.sigmorphon-1.16). In *Proceedings of the 20th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 138-150). Association for Computational Linguistics. [https://doi.org/10.18653/v1/2023.sigmorphon-1.16](https://doi.org/10.18653/v1/2023.sigmorphon-1.16)
+
+`2022` &emsp; **Kakolu Ramarao, A.**, Zinova, Y., Tang, K., \& van de Vijver, R. (2022). [HeiMorph at SIGMORPHON 2022 shared task on morphological acquisition trajectories](https://doi.org/10.18653/v1/2022.sigmorphon-1.24). In *Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology* (pp. 236-239). Association for Computational Linguistics. [https://doi.org/10.18653/v1/2022.sigmorphon-1.24](https://doi.org/10.18653/v1/2022.sigmorphon-1.24)
+
