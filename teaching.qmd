@@ -1,0 +1,24 @@
+---
+title: "Teaching"
+---
+## Heinrich-Heine-Universität Düsseldorf
+
+`Summer 2025` &emsp; Academic Writing
+
+`Summer 2025` &emsp; Applied Phonology: Evaluating Voice Assistants (co-teaching: Erdin Mujezinović)
+
+`Winter 2024` &emsp;  LLMs in Linguistic Research
+
+`Summer 2024` &emsp; Learning Inflection
+
+`Winter 2023` &emsp; Accent unplugged: Evaluating Voice assistants
+
+`Summer 2023` &emsp; Synthesizing speech
+
+`Winter 2022` &emsp; Language technology for Linguists with Internet of Things (IoT)
+
+`Winter 2022` &emsp; LaTeX for Linguists
+
+`Summer 2022` &emsp; Towards a career in language technology: linguistic annotation
+
+`Winter 2021` &emsp; Basic Skills in Digital Humanities

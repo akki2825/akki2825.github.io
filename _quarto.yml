@@ -8,6 +8,7 @@ website:
   navbar:
     left:
       - about.qmd
+      - teaching.qmd
       - icon: rss
         href: index.xml
   page-footer:
