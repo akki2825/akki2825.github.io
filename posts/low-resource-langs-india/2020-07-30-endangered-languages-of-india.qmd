@@ -52,6 +52,8 @@ language_data['population'] = language_data['population'].fillna(-1)
 
 # endangered or extinct languages in India
 language_ind = language_data[language_data['locations'].str.contains('IND') == True]
+# drop the mis-located 'Aka' entry (ID 1690) whose coordinates are wrong
+language_ind = language_ind[language_ind['id'] != 1690]
 
 language_ind['risk'] = language_ind['risk'].replace(
     ['Vulnerable', 'Definitely Endangered', 'Severely Endangered',
